@@ -1,5 +1,7 @@
+<!--
+.tab { margin-left: 20px; }
 body {
-    background-color: slategray;
+    background-color: rgb(255, 255, 255);
 }
 html,body {
     font-family:"Helvetica",sans-serif
@@ -12,3 +14,4 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+-->
