@@ -16,13 +16,13 @@ img {
 ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 ul li {
     display: flex;
     align-items: left;
-    justify-content: left;
+    justify-content: center;
     height: 20px;
     width: 20px;
     margin: 20px;
@@ -30,7 +30,7 @@ ul li {
 ul li a {
     display: flex;
     align-items: left;
-    justify-content: left;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
