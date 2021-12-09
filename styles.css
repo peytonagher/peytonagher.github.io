@@ -1,6 +1,8 @@
-.tab { margin-left: 20px; }
 body {
-    background-color:whitesmoke;
+    background-color: #70707018;
+}
+p {
+    color: white;
 }
 html,body {
     font-family:"Helvetica",sans-serif
