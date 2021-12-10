@@ -13,13 +13,13 @@ div.about-me {
     margin: auto;
     text-align: left;
 }
-div.about-me-disclaimer {
+.center {
     display: flex;
-    font-family: Helvetica, sans-serif;
-    font-size: 12px;
-    justify-content: center;
     margin: auto;
+    width: 50%;
+    font-size: 12px;
     text-align: left;
+    justify-content: left;
 }
 html,body {
     font-family:"Helvetica",sans-serif
