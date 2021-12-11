@@ -10,7 +10,7 @@
     <body>
         <header>
             <nav>
-                <div class="center"><ul class ="navigation">
+                <div class="navigation"><ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="resume.html">resume</a></li>
                     <li><a href="random.html">random</a></li>
@@ -36,12 +36,12 @@
         <br><br><br><br><br><br>
         <br><br><br><br><br><br>
         <footer>
-            <div class="center">
+            <div class="disclaimer">
                 This website has been and will be a work in progress until further notice. 
                 It is ultimately intended to house my resume as well as any other content 
                 I want to share with the world for professional & non-professional purposes.
             </div>
-            <div class="center"><ul class ="social-media">
+            <div class = "social-media"><ul>
                 <li><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img src = "media/linkedinlogo.png" style="width:100%"></a></li>
                 <li><a href="https://github.com/peytonagher" target="_blank"><img src = "media/githublogo.png" style="width:100%"></a></li>
                 <li><a href="https://instagram.com/peytonagher" target="_blank"><img src = "media/instagramlogo.png" style="width:100%"></a></li>
@@ -49,6 +49,14 @@
             </ul></div>
         </footer>
         <br><br>
+        <div class="time">today is<span id="date"></span></div>
+        <script type="text/javascript">
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+        </script>
         <h4>est. 2021</h4>
     </body>
 </html>

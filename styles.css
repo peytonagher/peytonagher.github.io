@@ -13,7 +13,7 @@ div.about-me {
     margin: auto;
     text-align: left;
 }
-.center {
+div.disclaimer {
     display: flex;
     margin: auto;
     width: 50%;
@@ -21,11 +21,14 @@ div.about-me {
     text-align: left;
     justify-content: left;
 }
+div.time {
+    text-align: center;
+}
 html,body {
-    font-family:"Helvetica",sans-serif
+    font-family:"Helvetica",sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family:"Helvetica",sans-serif
+    font-family:"Helvetica",sans-serif;
 }
 h4 {
     text-align: center;
