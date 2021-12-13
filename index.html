@@ -10,10 +10,10 @@
     <body>
         <header>
             <nav>
-                <div class="navigation"><ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="resume.html">resume</a></li>
-                    <li><a href="random.html">random</a></li>
+                <div><ul class="navigation">
+                    <li class="navigation"><a href="index.html">home</a></li>
+                    <li class="navigation"><a href="resume.html">resume</a></li>
+                    <li class="navigation"><a href="random.html">random</a></li>
                 </ul></div>
             </nav>
             <hr>
@@ -41,21 +41,18 @@
                 It is ultimately intended to house my resume as well as any other content 
                 I want to share with the world for professional & non-professional purposes.
             </div>
-            <div class = "social-media"><ul>
-                <li><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img src = "media/linkedinlogo.png" style="width:100%"></a></li>
-                <li><a href="https://github.com/peytonagher" target="_blank"><img src = "media/githublogo.png" style="width:100%"></a></li>
-                <li><a href="https://instagram.com/peytonagher" target="_blank"><img src = "media/instagramlogo.png" style="width:100%"></a></li>
-                <li><a href="https://twitter.com/peytonagher" target="_blank"><img src = "media/twitterlogo.png" style="width:100%"></a></li>
+            <div><ul class="social-media">
+                <li class="social-media"><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img src = "media/linkedinlogo.png" style="width:100%"></a></li>
+                <li class="social-media"><a href="https://github.com/peytonagher" target="_blank"><img src = "media/githublogo.png" style="width:100%"></a></li>
+                <li class="social-media"><a href="https://instagram.com/peytonagher" target="_blank"><img src = "media/instagramlogo.png" style="width:100%"></a></li>
+                <li class="social-media"><a href="https://twitter.com/peytonagher" target="_blank"><img src = "media/twitterlogo.png" style="width:100%"></a></li>
             </ul></div>
         </footer>
         <br><br>
-        <div class="time">today is<span id="date"></span></div>
-        <script type="text/javascript">
-            n =  new Date();
-            y = n.getFullYear();
-            m = n.getMonth() + 1;
-            d = n.getDate();
-            document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+        <p>today is<span id="date/time"></span></p>
+        <script>
+            var dayte =  new Date();
+            document.getElementById("date/time").innerHTML = dayte.toLocaleString();
         </script>
         <h4>est. 2021</h4>
     </body>

@@ -40,10 +40,23 @@ img {
     text-align: center;
 }
 ul.navigation {
-    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.navigation {
+    display: inline;
+    float: left;
+}
+li a.navigation {
+    display: block;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    padding: 8px;
+    text-decoration: none;
+}
+li a:hover.navigation {
+    background-color: lightslategray;
 }
 ul.social-media {
     display: inline-block;
