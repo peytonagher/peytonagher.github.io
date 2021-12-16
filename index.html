@@ -9,17 +9,17 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div><ul class="navigation">
-                    <li class="navigation"><a href="index.html">home</a></li>
-                    <li class="navigation"><a href="resume.html">resume</a></li>
-                    <li class="navigation"><a href="random.html">random</a></li>
-                </ul></div>
+            <nav class="navbar">
+                <ul class="navbar">
+                    <li class="navbar"><a class="navbar" href="index.html">home</a></li>
+                    <li class="navbar"><a class="navbar" href="resume.html">resume</a></li>
+                    <li class="navbar"><a class="navbar" href="random.html">random</a></li>
+                </ul>
             </nav>
             <hr>
         </header>
         <section>
-            <br><br><br><br><br><br>s
+            <br><br><br><br><br><br>
             <img src="media/campingpic.jpeg" alt="peyton!" style = "width:30%">
             <br><br>
             <pre><div class="about-me">
@@ -41,17 +41,17 @@
                 It is ultimately intended to house my resume as well as any other content 
                 I want to share with the world for professional & non-professional purposes.
             </div>
-            <div><ul class="social-media">
+            <div class="social-media"><ul class="social-media">
                 <li class="social-media"><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img src = "media/linkedinlogo.png" style="width:100%"></a></li>
                 <li class="social-media"><a href="https://github.com/peytonagher" target="_blank"><img src = "media/githublogo.png" style="width:100%"></a></li>
             </ul></div>
+            <br><br>
+            <p class="datetime"><span id="date/time"></span></p>
+            <script>
+                var dayte =  new Date();
+                document.getElementById("date/time").innerHTML = dayte.toLocaleString();
+            </script>
+            <h4>est. 2021</h4>
         </footer>
-        <br><br>
-        <p>today is<span id="date/time"></span></p>
-        <script>
-            var dayte =  new Date();
-            document.getElementById("date/time").innerHTML = dayte.toLocaleString();
-        </script>
-        <h4>est. 2021</h4>
     </body>
 </html>
