@@ -40,24 +40,19 @@ img {
     justify-content: center;
     text-align: center;
 }
-ul.navbar {
+nav.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-li.navbar {
     display: inline;
-    float: left;
-}
-li a.navbar {
-    display: block;
+    float: center;
     text-align: center;
     padding: 8px;
     text-decoration: none;
 }
-li a:hover.navbar {
-    background-color: lightslategray;
+a:hover.navbar {
+    background-color: skyblue;
 }
 ul {
     list-style-type: none;
