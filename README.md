@@ -1,3 +1,3 @@
 meesa website
 
-![alt text](https://github.com/peytonagher/website/media/jarjar.jpg?raw=true)
+![alt text](/media/jarjar.jpg?raw=true)
