@@ -68,6 +68,7 @@ ul {
     margin-right: 40px;
 }
 ul li {
+    color: lightgray;
     list-style-type: none;
     display: inline-flex;
     text-align: left;
@@ -78,6 +79,7 @@ ul li {
     margin: 15px;
 }
 ul li a {
+    color: lightgray;
     list-style-type: none;
     display: inline-flex;
     align-content: center;
