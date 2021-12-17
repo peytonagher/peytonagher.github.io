@@ -1,39 +1,93 @@
-.tab { margin-left: 20px; }
 body {
+<<<<<<< HEAD
     background-color:white;
+=======
+    background-color: #70707053;
+    align-content: center;
+    align-items: center;
 }
-html,body {
-    font-family:"Helvetica",sans-serif
+p, div {
+    color: whitesmoke;
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family:"Helvetica",sans-serif
-}
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-ul {
-    list-style: none;
+div.about-me {
     display: flex;
-    align-items: left;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+}
+div.disclaimer {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+    font-size: 10px;
+    text-align: left;
     justify-content: center;
 }
-ul li {
+div.time {
+    margin: auto;
     display: flex;
-    align-items: left;
+    text-align: center;
+    justify-content: center;
+>>>>>>> 0f013c191c724c999e13e36f9d13b606b007f870
+}
+html,body {
+    font-family: Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Helvetica, sans-serif;
+}
+h4 {
+    text-align: center;
+}
+img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+nav.navbar {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    display: inline;
+    float: center;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+a:hover.navbar {
+    background-color: skyblue;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+ul li {
+    color: lightgray;
+    list-style-type: none;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
     justify-content: center;
     height: 20px;
     width: 20px;
-    margin: 20px;
+    margin: 15px;
 }
 ul li a {
-    display: flex;
-    align-items: left;
+    color: lightgray;
+    list-style-type: none;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
     height: 100%;
-    width: 100%;
-}
-ul li a img {
-    width: 100%;
 }
