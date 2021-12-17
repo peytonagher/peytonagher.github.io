@@ -1,6 +1,7 @@
 body {
     background-color: #70707018;
-    text-indent: 40px;
+    align-content: center;
+    align-items: center;
 }
 p, div {
     color: whitesmoke;
@@ -15,20 +16,20 @@ div.about-me {
 }
 div.disclaimer {
     display: flex;
+    font-family: Helvetica, sans-serif;
     margin: auto;
-    width: 50%;
-    font-size: 12px;
+    font-size: 10px;
     text-align: left;
-    justify-content: left;
+    justify-content: center;
 }
 div.time {
     text-align: center;
 }
 html,body {
-    font-family:"Helvetica",sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family:"Helvetica",sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 h4 {
     text-align: center;
@@ -39,30 +40,24 @@ img {
     justify-content: center;
     text-align: center;
 }
-ul.navigation {
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-li.navigation {
+li.navbar {
     display: inline;
     float: left;
 }
-li a.navigation {
+li a.navbar {
     display: block;
     text-align: center;
     padding: 8px;
     text-decoration: none;
 }
-li a:hover.navigation {
+li a:hover.navbar {
     background-color: lightslategray;
-}
-ul.social-media {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 ul {
     list-style-type: none;
@@ -70,24 +65,25 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-right: 40px;
 }
 ul li {
     list-style-type: none;
-    display: flex;
-    text-align: center;
+    display: inline-flex;
+    text-align: left;
     align-items: center;
     justify-content: center;
     height: 20px;
     width: 20px;
-    margin: 20px;
+    margin: 15px;
 }
 ul li a {
-    display: flex;
-    align-items: left;
+    list-style-type: none;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
     height: 100%;
-    width: 100%;
-}
-ul li a img {
-    width: 100%;
 }
