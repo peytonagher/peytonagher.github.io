@@ -1,5 +1,5 @@
 body {
-    background-color: #70707018;
+    background-color: #70707053;
     align-content: center;
     align-items: center;
 }
@@ -23,7 +23,10 @@ div.disclaimer {
     justify-content: center;
 }
 div.time {
+    margin: auto;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 html,body {
     font-family: Helvetica, sans-serif;
@@ -42,8 +45,8 @@ img {
 }
 nav.navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     overflow: hidden;
     display: inline;
     float: center;
