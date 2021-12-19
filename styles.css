@@ -1,7 +1,4 @@
 body {
-<<<<<<< HEAD
-    background-color:white;
-=======
     background-color: #70707053;
     align-content: center;
     align-items: center;
@@ -30,7 +27,6 @@ div.time {
     display: flex;
     text-align: center;
     justify-content: center;
->>>>>>> 0f013c191c724c999e13e36f9d13b606b007f870
 }
 html,body {
     font-family: Helvetica, sans-serif;
