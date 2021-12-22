@@ -52,7 +52,6 @@ nav.navbar {
     float: center;
     text-align: center;
     padding: 8px;
-    text-decoration: none;
 }
 a:hover.navbar {
     background-color: skyblue;
