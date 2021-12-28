@@ -1,5 +1,5 @@
 body {
-    background-color: #70707053;
+    background-color: #333333;
     align-content: center;
     align-items: center;
 }
@@ -11,18 +11,24 @@ div.about-me {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     justify-content: center;
-    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    margin-left: 140px;
+    margin-right: 100px;
     text-align: left;
 }
 div.disclaimer {
     display: flex;
     font-family: Helvetica, sans-serif;
-    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-size: 10px;
     text-align: left;
     justify-content: center;
 }
-div.time {
+p.datetime {
     margin: auto;
     display: flex;
     text-align: center;
@@ -43,18 +49,8 @@ img {
     justify-content: center;
     text-align: center;
 }
-nav.navbar {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    display: inline;
-    float: center;
-    text-align: center;
-    padding: 8px;
-}
-a:hover.navbar {
-    background-color: skyblue;
+a:hover {
+    background-color: rgb(0, 0, 0);
 }
 ul {
     list-style-type: none;
@@ -62,18 +58,20 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
     margin-right: 40px;
+    
 }
 ul li {
     color: lightgray;
     list-style-type: none;
-    display: inline-flex;
-    text-align: left;
+    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     height: 20px;
     width: 20px;
-    margin: 15px;
+    margin: 20px;
 }
 ul li a {
     color: lightgray;

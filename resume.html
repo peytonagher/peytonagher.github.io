@@ -9,14 +9,13 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
+            <nav>
                 <ul>
-                    <li><a class="navbar" href="index.html">home</a></li>
-                    <li><a class="navbar" href="resume.html">resume</a></li>
-                    <li><a class="navbar" href="random.html">random</a></li>
+                    <li><a href="index.html" style="text-decoration:none">home</a></li>
+                    <li><a href="resume.html" style="text-decoration:none">resume</a></li>
+                    <li><a href="random.html" style="text-decoration:none">random</a></li>
                 </ul>
             </nav>
-            <hr>
         </header>
         <section> 
             <br><br>
@@ -88,15 +87,17 @@
                 It is ultimately intended to house my resume as well as any other content 
                 I want to share with the world for professional & non-professional purposes.
             </div></pre>
-            <div><ul class="social-media">
-                <li ><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img  src = "media/linkedinlogo.png" style="width:100%"></a></li>
-                <li ><a href="https://github.com/peytonagher" target="_blank"><img  src = "media/githublogo.png" style="width:100%"></a></li>
-            </ul></div>
-            <br><br>
-            <p class="datetime"><span id="date/time"></span></p>
+            <div class="social-media">
+                <ul>
+                    <li ><a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img  src = "media/linkedinlogo.png" style="width:100%"></a></li>
+                    <li ><a href="https://github.com/peytonagher" target="_blank"><img  src = "media/githublogo.png" style="width:100%"></a></li>
+                </ul>
+            </div>
+            <p class="datetime"><span id="datetime"></span></p>
             <script>
-                var dayte =  new Date();
-                document.getElementById("date/time").innerHTML = dayte.toLocaleString();
+                var date =  new Date();
+                document.getElementById("datetime").innerHTML = (("0" + (date.getMonth() + 1)).slice(-2)) + "." + 
+                (("0" + date.getDate()).slice(-2)) + "." + (date.getFullYear());
             </script>
             <h4>est. 2021</h4>
         </footer>
