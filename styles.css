@@ -5,6 +5,8 @@ body {
 }
 p, div {
     color: whitesmoke;
+    align-content: center;
+    align-items: center;
 }
 div.about-me {
     display: flex;
@@ -37,15 +39,29 @@ p.datetime {
 html,body {
     font-family: Helvetica, sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
     font-family: Helvetica, sans-serif;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
-h4 {
+h2 {
+    font-family: Helvetica, sans-serif;
+    color: whitesmoke;
+    align-content: center;
+    align-items: center;
     text-align: center;
 }
 img {
     display: flex;
     margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+img.gif {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
     justify-content: center;
     text-align: center;
 }
@@ -58,7 +74,7 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-right: 40px;
     
 }
