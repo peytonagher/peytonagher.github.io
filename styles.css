@@ -40,7 +40,7 @@ div.disclaimer {
     margin-bottom: 10px;
     margin-left: 200px;
     margin-right: 200px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     justify-content: center;
 }
@@ -49,9 +49,9 @@ h1,h3,h5,h6 {
     font-family: Helvetica, sans-serif;
     align-content: center;
     align-items: center;
-    text-align: left;
-    margin-left: 50px;
-    margin-bottom: 150px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 100px;
 }
 h2 {
     font-family: Helvetica, sans-serif;
@@ -106,14 +106,14 @@ ul li {
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    width: 20px;
-    margin: 20px;
+    height: 40px;
+    width: 30px;
+    margin: 25px;
 }
 ul li a {
     color: lightgray;
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -122,5 +122,5 @@ ul li a {
     height: 100%;
 }
 a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(103, 69, 254, 0.5);
 }
