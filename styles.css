@@ -1,6 +1,6 @@
 html,body {
     font-family: Helvetica, sans-serif;
-    background-color: #333333;
+    background-color: #252525;
     align-content: center;
     align-items: center;
 }
@@ -28,6 +28,16 @@ div.about-me {
     font-size: 16px;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: left;
+}
+div.about-me2 {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    justify-content: center;
     margin-bottom: 500px;
     margin-left: 400px;
     margin-right: 400px;
@@ -38,8 +48,8 @@ div.disclaimer {
     font-family: Helvetica, sans-serif;
     margin-top: 100px;
     margin-bottom: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 12px;
     text-align: left;
     justify-content: center;
