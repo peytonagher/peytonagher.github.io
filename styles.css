@@ -1,8 +1,13 @@
-html,body {
-    font-family: Helvetica, sans-serif;
+html {
     background-color: #333333;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Helvetica, sans-serif;
     align-content: center;
     align-items: center;
+    margin: 0;
 }
 p, div {
     color: whitesmoke;
