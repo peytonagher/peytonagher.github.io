@@ -32,17 +32,7 @@ div.about-me {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 25px;
-    margin-left: 400px;
-    margin-right: 400px;
-    text-align: left;
-}
-div.about-me2 {
-    display: flex;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    justify-content: center;
+    margin-top: 150px;
     margin-bottom: 500px;
     margin-left: 400px;
     margin-right: 400px;
@@ -138,5 +128,6 @@ ul li a {
     height: 100%;
 }
 a:hover {
+    background-size: 50%, 50%;
     background-color: rgba(103, 69, 254, 0.5);
 }
