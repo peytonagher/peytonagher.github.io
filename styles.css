@@ -131,3 +131,11 @@ a:hover {
     background-size: 50%, 50%;
     background-color: rgba(103, 69, 254, 0.5);
 }
+@media only screen and (max-device-width: 480px) {
+    body {
+        width: auto;
+    }
+    div#about-me {
+        font-size: 50%;
+    }
+}
