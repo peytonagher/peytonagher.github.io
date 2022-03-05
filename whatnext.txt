@@ -1,7 +1,0 @@
-What to do next:
-
-- use media queries to make website mobile-friendly
-    - iphone xr pixel dimensions: 1792x828
-    - iphone 13 pixel dimensions: 2532x1170
-
-- embedded snake game with javascript

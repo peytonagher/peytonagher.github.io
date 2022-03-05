@@ -1,4 +1,10 @@
-// https://www.educative.io/blog/javascript-snake-game-tutorial
+// snake game in javascript
+// need to add score tracker
+
+const boardBorder = "purple";
+const boardBackground = "black";
+const snakeColor = "darkblue";
+const snakeBorder = "lightblue";
 
 const board = document.getElementById("gameCanvas");
 const boardDimensions = gameCanvas.getContext("2d");
@@ -6,9 +12,20 @@ const boardDimensions = gameCanvas.getContext("2d");
 let snake = [{x: 200, y: 200}, {x: 190, y: 200}, {x: 180, y: 200}, 
     {x: 170, y: 200}, {x: 160, y: 200}];
 
+let dx = 10;  // horizontal velocity
+let dy = 0;   // vertical velocity
+
 document.addEventListener("keydown", changeDirection)
 
-function drawSnake(snake) {
+function clearGameCanvas() {
+    boardDimensions.fillStyle = boardBackground;
+    boardDimensions.strokestyle = boardBorder;
+    boardDimensions.fillRect(0, 0, board.width, board.height);
+    boardDimensions.strokeRect(0, 0, board.width, board.height);
+}
+
+
+function drawLittleSnake(snake) {
     boardDimensions.fillStyle = 'lightblue';
     boardDimensions.strokestyle = "darkblue";
     boardDimensions.fillRect(snake.x, snake.y, 10, 10);
@@ -16,18 +33,22 @@ function drawSnake(snake) {
 }
 
 
-function draw() {
-    snake.forEach(drawSnake);
+function drawBigSnake() {
+    snake.forEach(drawLittleSnake);
 }
 
 
 function moveSnake() {
     const head = {x: snake[0].x + dx, y: snake[0].y + dy};
     snake.unshift(head);
-    snake.pop();
-    setTimeout(function onTick() {  clearCanvas();  moveSnake();  drawSnake();}, 100);
-    setTimeout(function onTick() {  clearCanvas();  moveSnake();  drawSnake();}, 100);
-    drawSnake();
+    const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
+    if (gotNomNoms) {
+        score += 10;
+        foodTime();
+    }
+    else {
+        snake.pop();
+    }
 }
 
 
@@ -67,25 +88,50 @@ function changeDirection(event) {
 
 function gameEnd() {  
   for (let i = 4; i < snake.length; i++) {    
-    const has_collided = snake[i].x === snake[0].x && snake[i].y === snake[0].y
-    if (has_collided) 
-      return true
+    const collided = snake[i].x === snake[0].x && snake[i].y === snake[0].y
+    if (collided) {
+        return true
+    }
   }
   const hitLeftWall = snake[0].x < 0;  
-  const hitRightWall = snake[0].x > snakeboard.width - 10;
-  const hitToptWall = snake[0].y &lt; 0;
-  const hitBottomWall = snake[0].y > snakeboard.height - 10;
+  const hitRightWall = snake[0].x > board.width - 10;
+  const hitTopWall = snake[0].y &lt; 0;
+  const hitBottomWall = snake[0].y > board.height - 10;
  
-  
-  return hitLeftWall ||  hitRightWall || hitToptWall || hitBottomWall
+  return hitLeftWall ||  hitRightWall || hitTopWall || hitBottomWall
+}
+
+
+function beesechurgers(min, max) {
+    return Math.round((Math.random() * (max-min) + min) / 10) * 10;
+}
+
+
+function makeBeesechurgers() {
+    boardDimensions.fillStyle = "red";
+    boardDimensions.strokestyle = "beige";
+    boardDimensions.fillRect(food_x, food_y, 10, 10);
+    boardDimensions.strokeRect(food_x, food_y, 10, 10);
+}
+
+
+function foodTime() {
+    food_x = beesechurgers(0, board.width - 10);
+    food_y = beesechurgers(0, board.height - 10);
+    snake.forEach(function isSnakeHungy(part) {
+        const isFull = part.x == food_x && part.y == food_y;
+        if (isFull) {
+            foodTime();
+        }
+    });
 }
 
 
 function main() {
     setTimeout(function onTick() { 
-        clearBoard();
+        clearGameCanvas();
         moveSnake();
-        draw();
+        drawBigSnake();
         main();
     }, 100)
 }
