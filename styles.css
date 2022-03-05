@@ -134,14 +134,38 @@ a:hover {
 
 /* - use media queries to make website mobile-friendly
     - iphone xr pixel dimensions: 1792x828
-    - iphone 13 pixel dimensions: 2532x1170 */
+    - iphone 12/13 pixel dimensions: 2532x1170 */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 700px) {
     body {
         width: auto;
     }
-    div#about-me {
+    div {
+        font-size: 25%;
+    }
+}
+@media only screen and (min-width: 700px) {
+    body {
+        width: auto;
+    }
+    div {
         font-size: 50%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body {
+        width: auto;
+    }
+    div {
+        font-size: 75%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        width: auto;
+    }
+    div {
+        font-size: 100%;
     }
 }
 
