@@ -15,7 +15,7 @@ let snake = [{x: 200, y: 200}, {x: 190, y: 200}, {x: 180, y: 200},
 let dx = 10;  // horizontal velocity
 let dy = 0;   // vertical velocity
 
-document.addEventListener("keydown", changeDirection)
+document.addEventListener("keydown", changeDirection())
 
 function clearGameCanvas() {
     boardDimensions.fillStyle = boardBackground;
