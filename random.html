@@ -6,6 +6,14 @@
         <title>check back later!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css"/>
+        <style>
+            #gameCanvas {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+        </style>
     </head>
     <header>
         <nav>
@@ -24,20 +32,8 @@
     </header>
     <body>
         <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <style>
-            #gameCanvas {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-          </style>
-        <main>
-            <p>
-                <script type="application/javascript" src="snake.js"></script>
-                <!-- <img class="gif" src="media/hello-there-obi-wan.gif" alt="jif" style = "width:50%"> -->
-            </p>
-        </main>
+        <script type="application/javascript" src="snake.js"></script>
+        <!-- <img class="gif" src="media/hello-there-obi-wan.gif" alt="jif" style = "width:50%"> -->
         <footer>
             <div class="disclaimer">
                 disclaimer: this website will be a work in progress until further notice.
