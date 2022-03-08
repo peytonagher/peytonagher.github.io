@@ -17,7 +17,7 @@ let dx = 10;    // horizontal velocity
 let dy = 0;     // vertical velocity
 let food_x;
 let food_y;
-let changing_direction = false;
+let changingDirection = false;
 
 main();
 foodTime();
@@ -134,7 +134,7 @@ function foodTime() {
 
 function main() {
     if (gameEnd()) return;
-    changing_direction = false;
+    changingDirection = false;
     setTimeout(function onTick() { 
         clearGameCanvas();
         makeBeesechurgers();
