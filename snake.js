@@ -21,8 +21,8 @@ let changingDirection = false;
 
 main();
 foodTime();
-
-document.addEventListener("keydown", changeDirection)   // add false as 3rd arg here?
+// add false as 3rd arg here?
+document.addEventListener("keydown", changeDirection) 
 
 function clearGameCanvas() {
     boardDimensions.fillStyle = boardBackground;
