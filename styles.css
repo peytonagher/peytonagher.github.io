@@ -133,7 +133,11 @@ a:hover {
 }
 
 /* * { padding: 0; margin: 0; }  */
-canvas { background: rgb(0, 166, 255); display: block; margin: auto; }
+canvas { 
+    background: rgb(113, 205, 255); 
+    display: block; 
+    margin: auto; 
+}
 #gameCanvas {
     position: relative;
     top: 50%;
