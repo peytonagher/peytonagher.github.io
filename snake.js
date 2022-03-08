@@ -4,8 +4,8 @@ const boardBackground = "black";
 const snakeColor = "darkblue";
 const snakeBorder = "lightblue";
 
-const board = document.getElementById("gameCanvas");
-const boardDimensions = gameCanvas.getContext("2d");
+var board = document.getElementById("gameCanvas");
+var boardDimensions = gameCanvas.getContext("2d");
 
 let snake = [{x: 200, y: 200}, 
             {x: 190, y: 200}, 
