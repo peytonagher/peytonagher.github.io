@@ -1,4 +1,15 @@
 // snake game in js
+
+document.addEventListener("DOMContentLoaded", 
+    function () {
+        pTag = document.querySelector("div");
+        newVal = document.createElement("p");
+        newVal.innerHTML = '';
+        pTag.appendChild(newVal);
+    }
+);
+
+
 const boardBorder = "purple";
 const boardBackground = "black";
 const snakeColor = "darkblue";
