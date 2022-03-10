@@ -26,7 +26,7 @@
         <canvas id="gameCanvas" width="400" height="400"></canvas>
         <style>
             #gameCanvas {
-                position: absolute;
+                position: relative;
                 top: 50%;
                 bottom: 50%;
                 left: 50%;
@@ -39,7 +39,7 @@
 
         document.addEventListener("DOMContentLoaded", 
             function () {
-                alert("loaded!");
+                alert("snake loaded!");
                 pTag = document.querySelector("div");
                 newVal = document.createElement("p");
                 newVal.innerHTML = '';
@@ -47,8 +47,8 @@
             }
         );
 
-        const boardBorder = "purple";
-        const boardBackground = "purple";
+        const boardBorder = "#333333";
+        const boardBackground = "#333333";
         const snakeColor = "cyan";
         const snakeBorder = "blue";
 
@@ -102,7 +102,6 @@
             snake.unshift(head);
             const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
             if (gotNomNoms) {
-                score += 10;
                 foodTime();
             }
             else {
