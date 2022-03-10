@@ -90,10 +90,6 @@
             boardDimensions.strokeRect(0, 0, board.width, board.height);
         }
 
-        function drawBigSnake() {
-            snake.forEach(drawLittleSnake);
-        }
-
         function makeBeesechurgers() {
             boardDimensions.fillStyle = "red";
             boardDimensions.strokestyle = "beige";
@@ -101,25 +97,28 @@
             boardDimensions.strokeRect(food_x, food_y, 10, 10);
         }
 
+        function moveSnake() {
+            const head = {x: snake[0].x + dx, y: snake[0].y + dy};
+            snake.unshift(head);
+            const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
+            if (gotNomNoms) {
+                score += 10;
+                foodTime();
+            }
+            else {
+                snake.pop();
+            }
+        }
+
+        function drawBigSnake() {
+            snake.forEach(drawLittleSnake);
+        }
+
         function drawLittleSnake(snakeChunk) {
             boardDimensions.fillStyle = 'lightblue';
             boardDimensions.strokestyle = "darkblue";
             boardDimensions.fillRect(snakeChunk.x, snakeChunk.y, 10, 10);
             boardDimensions.strokeRect(snakeChunk.x, snakeChunk.y, 10, 10);
-        }
-
-        function gameEnd() {  
-            for (let i = 4; i < snake.length; i++) {    
-                const collided = snake[i].x === snake[0].x && snake[i].y === snake[0].y
-                if (collided) {
-                    return true
-                }
-            }
-            const hitLeftWall = snake[0].x < 0;
-            const hitRightWall = snake[0].x > board.width - 10;
-            const hitToptWall = snake[0].y < 0;
-            const hitBottomWall = snake[0].y > board.height - 10;
-            return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
         }
 
         function beesechurgers(min, max) {
@@ -169,17 +168,18 @@
             }
         }
 
-        function moveSnake() {
-            const head = {x: snake[0].x + dx, y: snake[0].y + dy};
-            snake.unshift(head);
-            const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
-            if (gotNomNoms) {
-                score += 10;
-                foodTime();
+        function gameEnd() {  
+            for (let i = 4; i < snake.length; i++) {    
+                const collided = snake[i].x === snake[0].x && snake[i].y === snake[0].y
+                if (collided) {
+                    return true
+                }
             }
-            else {
-                snake.pop();
-            }
+            const hitLeftWall = snake[0].x < 0;
+            const hitRightWall = snake[0].x > board.width - 10;
+            const hitToptWall = snake[0].y < 0;
+            const hitBottomWall = snake[0].y > board.height - 10;
+            return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
         }
 
     </script>
