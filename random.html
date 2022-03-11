@@ -6,7 +6,18 @@
         <title>check back later!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css"/>
+        <style>
+            #gameCanvas {
+                position: relative;
+                top: 50%;
+                bottom: 50%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
     </head>
+    <body>
     <header>
         <nav>
             <ul>
@@ -22,18 +33,8 @@
             </ul>
         </nav>
     </header>
-    <body>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <style>
-            #gameCanvas {
-                position: relative;
-                top: 50%;
-                bottom: 50%;
-                left: 50%;
-                right: 50%;
-                transform: translate(-50%, -50%);
-            }
-        </style>
+    <br><br>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script> 
         // snake game in javascript
 
@@ -47,8 +48,8 @@
             }
         );
 
-        const boardBorder = "#333333";
-        const boardBackground = "#333333";
+        const boardBorder = "#333300";
+        const boardBackground = "#333300";
         const snakeColor = "cyan";
         const snakeBorder = "blue";
 
@@ -135,10 +136,10 @@
         }
 
         function changeDirection(event) {
-            const LEFT_KEY = 37;
-            const RIGHT_KEY = 39;
-            const UP_KEY = 38;
-            const DOWN_KEY = 40;
+            const LEFT_KEY = 65;    // A key
+            const RIGHT_KEY = 68;   // D key
+            const UP_KEY = 87;      // W key
+            const DOWN_KEY = 83;    // S key
             
             const keyPressed = event.keyCode;
             const goingUp = dy === -10;
