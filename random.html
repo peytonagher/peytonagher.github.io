@@ -17,7 +17,6 @@
             }
         </style>
     </head>
-    <body>
     <header>
         <nav>
             <ul>
@@ -34,13 +33,14 @@
         </nav>
     </header>
     <br><br>
+    <body>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script> 
         // snake game in javascript
 
         document.addEventListener("DOMContentLoaded", 
             function () {
-                alert("snake loaded!");
+                // alert("snake loaded!");
                 pTag = document.querySelector("div");
                 newVal = document.createElement("p");
                 newVal.innerHTML = '';
@@ -48,10 +48,10 @@
             }
         );
 
-        const boardBorder = "#333300";
-        const boardBackground = "#333300";
-        const snakeColor = "cyan";
-        const snakeBorder = "blue";
+        const boardBorder = "#202020";
+        const boardBackground = "#202020";
+        const snakeColor = "00c99a";
+        const snakeBorder = "4a00c9";
 
         let snake = [{x: 200, y: 200}, 
                     {x: 190, y: 200}, 
@@ -93,7 +93,7 @@
 
         function makeBeesechurgers() {
             boardDimensions.fillStyle = "red";
-            boardDimensions.strokestyle = "beige";
+            boardDimensions.strokestyle = "red";
             boardDimensions.fillRect(food_x, food_y, 10, 10);
             boardDimensions.strokeRect(food_x, food_y, 10, 10);
         }
@@ -115,8 +115,8 @@
         }
 
         function drawLittleSnake(snakeChunk) {
-            boardDimensions.fillStyle = 'lightblue';
-            boardDimensions.strokestyle = "darkblue";
+            boardDimensions.fillStyle = snakeColor;
+            boardDimensions.strokestyle = snakeBorder;
             boardDimensions.fillRect(snakeChunk.x, snakeChunk.y, 10, 10);
             boardDimensions.strokeRect(snakeChunk.x, snakeChunk.y, 10, 10);
         }
@@ -136,10 +136,10 @@
         }
 
         function changeDirection(event) {
-            const LEFT_KEY = 65;    // A key
-            const RIGHT_KEY = 68;   // D key
             const UP_KEY = 87;      // W key
+            const LEFT_KEY = 65;    // A key
             const DOWN_KEY = 83;    // S key
+            const RIGHT_KEY = 68;   // D key
             
             const keyPressed = event.keyCode;
             const goingUp = dy === -10;
@@ -192,10 +192,14 @@
         <div class="social-media">
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img  src = "media/linkedinlogo.png" style="width:100%"></a>
+                    <a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank">
+                        <img  src = "media/linkedinlogo.png" style="width:100%">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://github.com/peytonagher" target="_blank"><img  src = "media/githublogo.png" style="width:100%"></a>
+                    <a href="https://github.com/peytonagher" target="_blank">
+                        <img  src = "media/githublogo.png" style="width:100%">
+                    </a>
                 </li>
             </ul>
         </div>
