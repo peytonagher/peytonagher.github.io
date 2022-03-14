@@ -15,6 +15,7 @@ p, div {
     align-items: center;
 }
 p.resume {
+    display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     justify-content: left;
@@ -46,7 +47,18 @@ div.disclaimer {
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
+}
+div.gamecontrols {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    text-align: center;
     justify-content: center;
 }
 h1,h3,h5,h6 {
@@ -132,39 +144,104 @@ a:hover {
     background-color: rgba(103, 69, 254, 0.5);
 }
 
-/* - use media queries to make website mobile-friendly
-    - iphone xr pixel dimensions: 1792x828
-    - iphone 12/13 pixel dimensions: 2532x1170 */
+/* 
+    viewports:
+        375x667
+        390x844
+        414x896
+        428x926
+        1024x1366
+                    */
 
-@media only screen and (max-width: 700px) {
-    body {
-        width: auto;
+@media only screen and (max-width: 375px) {
+    main {
+        width: 25%;
     }
     div {
         font-size: 25%;
     }
+    img {
+        max-width: 80%
+    }
+    #about-me {
+        width: 25%;
+    }
+    #resume {
+        width: 25%;
+    }
+    #disclaimer {
+        width: 25%;
+    }
+    #gamecontrols {
+        width: 30%;
+    }
 }
-@media only screen and (min-width: 700px) {
-    body {
-        width: auto;
+@media only screen and (max-width: 410px) {
+    main {
+        width: 50%;
     }
     div {
         font-size: 50%;
     }
+    img {
+        max-width: 80%
+    }
+    #about-me {
+        width: 50%;
+    }
+    #resume {
+        width: 50%;
+    }
+    #disclaimer {
+        width: 50%;
+    }
+    #gamecontrols {
+        width: 55%;
+    }
 }
-@media only screen and (min-width: 800px) {
-    body {
-        width: auto;
+@media only screen and (max-width: 1000px) {
+    main {
+        width: 75%;
     }
     div {
-        font-size: 75%;
+        font-size: 80%;
+    }
+    img {
+        max-width: 100%
+    }
+    #about-me {
+        width: 75%;
+    }
+    #resume {
+        width: 75%;
+    }
+    #disclaimer {
+        width: 75%;
+    }
+    #gamecontrols {
+        width: 80%;
     }
 }
-@media only screen and (min-width: 1200px) {
-    body {
-        width: auto;
+@media only screen and (min-width: 1001px) {
+    main {
+        width: 100%;
     }
     div {
         font-size: 100%;
+    }
+    img {
+        max-width: 100%
+    }
+    #about-me {
+        width: 100%;
+    }
+    #resume {
+        width: 100%;
+    }
+    #disclaimer {
+        width: 100%;
+    }
+    #gamecontrols {
+        width: 100%;
     }
 }

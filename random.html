@@ -3,7 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "description" content = "random">
-        <title>check back later!</title>
+        <title>snake</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css"/>
         <style>
@@ -35,8 +35,7 @@
     <br><br><br><br>
     <body>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <script> 
-        // snake game in javascript
+    <script>    /* snake game in javascript */
 
         document.addEventListener("DOMContentLoaded", 
             function () {
@@ -72,8 +71,8 @@
         // add false as 3rd arg here?
         document.addEventListener("keydown", changeDirection) 
 
-        function main() {
-            if (gameEnd()) return;
+        function main() {       
+            if (gameEnd()) return;  // change this if block around to restart game after losing
             changingDirection = false;
             setTimeout(function onTick() { 
                 clearGameCanvas();
@@ -81,7 +80,7 @@
                 moveSnake();
                 drawBigSnake();
                 main();
-            }, 100)
+            }, 1000)
         }
 
         function clearGameCanvas() {
@@ -190,6 +189,9 @@
         <div class="disclaimer">
             disclaimer: this website will be a work in progress until further notice.
         </div>
+        <div class="gamecontrols">
+            ** wasd to move, ctrl/cmd + r to restart **
+        </div>
         <div class="social-media">
             <ul>
                 <li>
@@ -214,3 +216,5 @@
         <br><br>
     </footer>
 </html>
+
+<!-- /* use this to make konami code access https://stackoverflow.com/questions/47465597/javascript-how-do-i-show-and-hide-an-element-using-keyboard-keys */ -->
