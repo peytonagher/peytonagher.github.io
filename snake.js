@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        // alert("snake loaded!");
+        alert("snake loaded!");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",
     }
 );
 
-const boardBorder = "#202020";
-const boardBackground = "#202020";
+const boardBorder = "#333333";
+const boardBackground = "#333333";
 const snakeColor = "#800080";
 const snakeBorder = "#800080";
 
@@ -29,8 +29,8 @@ var boardDimensions = gameCanvas.getContext("2d");
 
 main();
 foodTime();
-// add false as 3rd arg here?
-document.addEventListener("keydown", changeDirection) 
+
+document.addEventListener("keydown", changeDirection) // add false as 3rd arg here?
 
 function main() {       
     if (gameEnd()) return;  // change this if block around to restart game after losing

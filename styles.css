@@ -143,10 +143,15 @@ ul li a {
 #navbar {
     position:fixed;
     margin:0px;
+    top: 0;
+    left: 0;
     display:block;
 }
 #gameCanvas {
-    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     top: 50%;
     bottom: 50%;
     left: 50%;
