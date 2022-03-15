@@ -41,7 +41,7 @@ function main() {
         moveSnake();
         drawBigSnake();
         main();
-    }, 10)
+    }, 150)
 }
 
 function clearGameCanvas() {
