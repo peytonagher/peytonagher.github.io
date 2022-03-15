@@ -8,7 +8,6 @@ body {
     align-content: center;
     align-items: center;
     margin: 0;
-    padding-top: 50px;
 }
 p, div {
     color: whitesmoke;
@@ -19,7 +18,7 @@ p.resume {
     display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-    justify-content: center;
+    justify-content: left;
     text-align: left;
     margin-left: 100px;
 }
@@ -151,6 +150,7 @@ ul li a {
 #gameCanvas {
     position: relative;
     display: block;
+    padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
     margin-left: auto;
