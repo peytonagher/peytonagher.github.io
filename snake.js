@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded",
 
 const boardBorder = "#202020";
 const boardBackground = "#202020";
-const snakeColor = "00c99a";
-const snakeBorder = "4a00c9";
+const snakeColor = "#800080";
+const snakeBorder = "#800080";
 
 let snake = [{x: 200, y: 200}, 
             {x: 190, y: 200}, 
@@ -41,7 +41,7 @@ function main() {
         moveSnake();
         drawBigSnake();
         main();
-    }, 1000)
+    }, 10)
 }
 
 function clearGameCanvas() {
@@ -52,8 +52,8 @@ function clearGameCanvas() {
 }
 
 function makeBeesechurgers() {
-    boardDimensions.fillStyle = "red";
-    boardDimensions.strokestyle = "red";
+    boardDimensions.fillStyle = "#00FFFF";
+    boardDimensions.strokestyle = "#00FFFF";
     boardDimensions.fillRect(food_x, food_y, 10, 10);
     boardDimensions.strokeRect(food_x, food_y, 10, 10);
 }

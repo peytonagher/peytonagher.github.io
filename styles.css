@@ -18,7 +18,7 @@ p.resume {
     display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-    justify-content: left;
+    justify-content: center;
     text-align: left;
     margin-left: 100px;
 }
@@ -37,7 +37,7 @@ div.about-me {
     margin-bottom: 500px;
     margin-left: 400px;
     margin-right: 400px;
-    text-align: left;
+    text-align: center;
 }
 div.disclaimer {
     display: flex;
