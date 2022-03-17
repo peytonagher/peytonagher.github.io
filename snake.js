@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("snake loaded!");
+        alert("wasd to move" + "\nctrl/cmd + r to restart");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",
     }
 );
 
-const boardBorder = "#000000";
-const boardBackground = "#000000";
+const boardBorder = "#212121";
+const boardBackground = "#212121";
 const snakeColor = "#800080";
 const snakeBorder = "#800080";
 
