@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",
     }
 );
 
-const boardBorder = "#333333";
-const boardBackground = "#333333";
+const boardBorder = "#000000";
+const boardBackground = "#000000";
 const snakeColor = "#800080";
 const snakeBorder = "#800080";
 
