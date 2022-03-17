@@ -182,12 +182,6 @@ a:hover {
     img {
         max-width: 80%
     }
-    #about-me {
-        width: 25%;
-    }
-    #resume {
-        width: 25%;
-    }
     #disclaimer {
         width: 25%;
     }
@@ -206,12 +200,6 @@ a:hover {
     }
     img {
         max-width: 80%
-    }
-    #about-me {
-        width: 50%;
-    }
-    #resume {
-        width: 50%;
     }
     #disclaimer {
         width: 50%;
@@ -232,12 +220,6 @@ a:hover {
     img {
         max-width: 100%
     }
-    #about-me {
-        width: 75%;
-    }
-    #resume {
-        width: 75%;
-    }
     #disclaimer {
         width: 75%;
     }
@@ -256,12 +238,6 @@ a:hover {
     }
     img {
         max-width: 100%
-    }
-    #about-me {
-        width: 100%;
-    }
-    #resume {
-        width: 100%;
     }
     #disclaimer {
         width: 100%;
