@@ -1,5 +1,5 @@
 html {
-    background-color: #333333;
+    background-color: #3e3e3e;
     height: 100%;
     width: 100%;
 }
@@ -158,7 +158,7 @@ ul li a {
 }
 a:hover {
     background-size: 50%, 50%;
-    background-color: rgba(103, 69, 254, 0.35);
+    background-color: rgba(47, 109, 255, 0.8);
 }
 
 /* 
@@ -172,37 +172,43 @@ a:hover {
 
 @media only screen and (max-width: 375px) {
     body {
-        width: 25%;
+        width: 50%;
         align-content: center;
-        font-size: 25%;
+        font-size: 50%;
     }
     div {
-        font-size: 25%;
+        font-size: 50%;
     }
     img {
-        max-width: 80%
+        max-width: 50%
+    }
+    #gameCanvas {
+        width: 50%;
     }
     #disclaimer {
-        width: 25%;
+        width: 50%;
     }
     #gamecontrols {
-        width: 30%;
+        width: 50%;
     }
 }
 @media only screen and (max-width: 410px) {
     body {
-        width: 50%;
+        width: 65%;
         align-content: center;
-        font-size: 50%;
+        font-size: 65%;
     }
     div {
         font-size: 50%;
     }
     img {
-        max-width: 80%
+        max-width: 70%
+    }
+    #gameCanvas {
+        width: 70%;
     }
     #disclaimer {
-        width: 50%;
+        width: 55%;
     }
     #gamecontrols {
         width: 55%;
@@ -212,32 +218,38 @@ a:hover {
     body {
         width: 75%;
         align-content: center;
-        font-size: 50%;
+        font-size: 75%;
     }
     div {
-        font-size: 80%;
+        font-size: 75%;
     }
     img {
-        max-width: 100%
+        max-width: 80%
+    }
+    #gameCanvas {
+        width: 100%;
     }
     #disclaimer {
         width: 75%;
     }
     #gamecontrols {
-        width: 80%;
+        width: 75%;
     }
 }
 @media only screen and (min-width: 1001px) {
     body {
         width: 100%;
         align-content: center;
-        font-size: 50%;
+        font-size: 100%;
     }
     div {
         font-size: 100%;
     }
     img {
         max-width: 100%
+    }
+    #gameCanvas {
+        width: 100%;
     }
     #disclaimer {
         width: 100%;
