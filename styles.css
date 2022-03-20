@@ -227,7 +227,7 @@ a:hover {
         max-width: 80%
     }
     #gameCanvas {
-        width: 100%;
+        width: 80%;
     }
     #disclaimer {
         width: 75%;
@@ -247,9 +247,6 @@ a:hover {
     }
     img {
         max-width: 100%
-    }
-    #gameCanvas {
-        width: 100%;
     }
     #disclaimer {
         width: 100%;
