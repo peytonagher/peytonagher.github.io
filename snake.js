@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("use wasd to move");
+        alert("use wasd to move" + "\nctrl/cmd + r to restart");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -35,6 +35,7 @@ document.addEventListener("keydown", changeDirection, false) // add false as 3rd
 function main() {       
     if (gameEnd()) {
         alert(" you lose :( " + "\n\nctrl/cmd + r to restart");
+        main();
         return;
     }  // change this if block around to restart game after losing
     changingDirection = false;

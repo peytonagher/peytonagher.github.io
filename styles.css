@@ -176,7 +176,7 @@ ul li a {
 
 a:hover {
     background-size: 50%, 50%;
-    background-color: rgba(47, 109, 255, 0.8);
+    background-color: rgb(47, 109, 255);
 }
 
 @media only screen and (max-width: 375px) {
@@ -188,8 +188,28 @@ a:hover {
     div {
         font-size: 50%;
     }
-    img {
+    .myphoto {
         max-width: 50%
+    }
+    .about-me {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .resume {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .disclaimer {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .social-media {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
     }
     #gameCanvas {
         width: 50%;
@@ -210,8 +230,28 @@ a:hover {
     div {
         font-size: 50%;
     }
-    img {
-        max-width: 70%
+    .myphoto {
+        max-width: 50%
+    }
+    .about-me {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .resume {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .disclaimer {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
+    }
+    .social-media {
+        width: 50%;
+        align-content: center;
+        font-size: 50%;
     }
     #gameCanvas {
         width: 70%;
@@ -232,8 +272,28 @@ a:hover {
     div {
         font-size: 75%;
     }
-    img {
-        max-width: 80%
+    .myphoto {
+        max-width: 75%
+    }
+    .about-me {
+        width: 75%;
+        align-content: center;
+        font-size: 75%;
+    }
+    .resume {
+        width: 75%;
+        align-content: center;
+        font-size: 75%;
+    }
+    .disclaimer {
+        width: 75%;
+        align-content: center;
+        font-size: 75%;
+    }
+    .social-media {
+        width: 75%;
+        align-content: center;
+        font-size: 75%;
     }
     #gameCanvas {
         width: 80%;
@@ -254,8 +314,28 @@ a:hover {
     div {
         font-size: 100%;
     }
-    img {
+    .myphoto {
         max-width: 100%
+    }
+    .about-me {
+        width: 100%;
+        align-content: center;
+        font-size: 100%;
+    }
+    .resume {
+        width: 100%;
+        align-content: center;
+        font-size: 100%;
+    }
+    .disclaimer {
+        width: 100%;
+        align-content: center;
+        font-size: 100%;
+    }
+    .social-media {
+        width: 100%;
+        align-content: center;
+        font-size: 100%;
     }
     #disclaimer {
         width: 100%;
