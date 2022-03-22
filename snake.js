@@ -34,10 +34,10 @@ document.addEventListener("keydown", changeDirection, false) // add false as 3rd
 
 function main() {       
     if (gameEnd()) {
-        alert(" you lost :( " + "\n\nctrl/cmd + r to restart");
+        alert(" you lost :( ");
         main();
         return;
-    }  // change this if block around to restart game after losing
+    }
     changingDirection = false;
     setTimeout(function onTick() { 
         clearGameCanvas();
