@@ -107,6 +107,7 @@ img {
     margin: auto;
     justify-content: center;
     background-color: white;
+    opacity: 75%;
 }
 
 img.myphoto {
