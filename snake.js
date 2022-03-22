@@ -34,7 +34,7 @@ document.addEventListener("keydown", changeDirection, false) // add false as 3rd
 
 function main() {       
     if (gameEnd()) {
-        alert(" you lose :( " + "\n\nctrl/cmd + r to restart");
+        alert(" you lost :( " + "\n\nctrl/cmd + r to restart");
         main();
         return;
     }  // change this if block around to restart game after losing

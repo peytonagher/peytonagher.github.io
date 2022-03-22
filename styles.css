@@ -35,7 +35,7 @@ div.about-me {
     display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 150px;
     margin-bottom: 500px;
     margin-left: 400px;
@@ -107,7 +107,6 @@ img {
     margin: auto;
     justify-content: center;
     background-color: white;
-    opacity: 75%;
 }
 
 img.myphoto {
@@ -275,11 +274,11 @@ a:hover {
     .myphoto {
         max-width: 75%
     }
-    .about-me {
+    /* .about-me {
         width: 75%;
         align-content: center;
         font-size: 75%;
-    }
+    } */
     .resume {
         width: 75%;
         align-content: center;
@@ -317,11 +316,11 @@ a:hover {
     .myphoto {
         max-width: 100%
     }
-    .about-me {
+    /* .about-me {
         width: 100%;
         align-content: center;
         font-size: 100%;
-    }
+    } */
     .resume {
         width: 100%;
         align-content: center;
