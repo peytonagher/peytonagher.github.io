@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("wasd to move" + "\nctrl/cmd + r to restart");
+        alert("use wasd to move");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",
     }
 );
 
-const boardBorder = "#212121";
-const boardBackground = "#212121";
+const boardBorder = "#3e3e3e";
+const boardBackground = "#3e3e3e";
 const snakeColor = "#800080";
 const snakeBorder = "#800080";
 
@@ -30,10 +30,13 @@ var boardDimensions = gameCanvas.getContext("2d");
 main();
 foodTime();
 
-document.addEventListener("keydown", changeDirection) // add false as 3rd arg here?
+document.addEventListener("keydown", changeDirection, false) // add false as 3rd arg here?
 
 function main() {       
-    if (gameEnd()) return;  // change this if block around to restart game after losing
+    if (gameEnd()) {
+        alert(" you lose :( " + "\n\nctrl/cmd + r to restart");
+        return;
+    }  // change this if block around to restart game after losing
     changingDirection = false;
     setTimeout(function onTick() { 
         clearGameCanvas();
