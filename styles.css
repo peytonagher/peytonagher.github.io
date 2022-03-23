@@ -39,7 +39,7 @@ div.about-me {
     margin-bottom: 500px;
     margin-left: 50%;
     margin-right: 50%;
-    justify-content: center; /* maybe comment this out */
+    justify-content: left;
     text-align: center;
 }
 
@@ -165,7 +165,7 @@ ul li a {
 }
 #gameCanvas {
     position: relative;
-    display: flex;      /* change to block if no work */
+    display: inline-block;      /* change to flex if no work */
     padding-top: 50px;
     /* padding-bottom: 200px; */
     margin-bottom: 200px;
