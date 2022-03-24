@@ -39,7 +39,7 @@ div.about-me {
     margin-bottom: 500px;
     margin-left: 50%;
     margin-right: 50%;
-    text-align: center;
+    text-align: left;
 }
 
 div.disclaimer {
@@ -305,14 +305,10 @@ a:hover {
 @media only screen and (min-width: 1001px) {
     body {
         width: 100%;
-        align-content: center;
         font-size: 100%;
     }
     div {
         font-size: 100%;
-    }
-    .myphoto {
-        max-width: 100%
     }
     /* .about-me {
         width: 100%;
