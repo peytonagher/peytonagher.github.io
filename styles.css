@@ -32,7 +32,7 @@ p.datetime {
 }
 
 div.about-me {
-    display: flex;
+    display: flexbox;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     margin-top: 150px;
