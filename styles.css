@@ -39,6 +39,7 @@ div.about-me {
     margin-bottom: 500px;
     margin-left: 50%;
     margin-right: 50%;
+    justify-content: left;
     text-align: left;
 }
 
@@ -164,7 +165,7 @@ ul li a {
 }
 #gameCanvas {
     position: relative;
-    display: inline-block;      /* change to flex if no work */
+    display: flex;      /* change to flex if no work */
     padding-top: 50px;
     /* padding-bottom: 200px; */
     margin-bottom: 200px;
@@ -181,7 +182,7 @@ a:hover {
 @media only screen and (max-width: 375px) {
     body {
         width: 50%;
-        align-content: center;
+        /* align-content: center; */
         font-size: 50%;
     }
     div {
@@ -222,7 +223,7 @@ a:hover {
 @media only screen and (max-width: 410px) {
     body {
         width: 65%;
-        align-content: center;
+        /* align-content: center; */
         font-size: 65%;
     }
     div {
@@ -263,7 +264,7 @@ a:hover {
 @media only screen and (max-width: 1000px) {
     body {
         width: 75%;
-        align-content: center;
+        /* align-content: center; */
         font-size: 75%;
     }
     div {
