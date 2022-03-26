@@ -6,7 +6,6 @@ html {
 body {
     font-family: Helvetica, sans-serif;
     align-content: center;
-    align-items: center; 
 }
 p, div {
     color: whitesmoke;
@@ -38,7 +37,9 @@ div.about-me {
     margin-bottom: 500px;
     margin-left: 50%;
     margin-right: 50%;
-    justify-content: left;
+    align-items: left;
+    align-content: left;
+    justify-content: center;
     text-align: left;
 }
 
