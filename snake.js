@@ -34,8 +34,8 @@ document.addEventListener("keydown", changeDirection, false) // add false as 3rd
 
 function main() {       
     if (gameEnd()) {
-        alert(" you lost :( ");
         main();
+        return;
     }
     changingDirection = false;
     setTimeout(function onTick() { 
