@@ -113,6 +113,7 @@ img.myphoto {
     display: flex;
     margin: auto;
     justify-content: center;
+    width: 20%;
 }
 img.gif {
     display: flex;
