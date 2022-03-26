@@ -7,7 +7,6 @@ body {
     font-family: Helvetica, sans-serif;
     align-content: center;
     align-items: center; 
-    margin: auto;
 }
 p, div {
     color: whitesmoke;
@@ -31,8 +30,8 @@ p.datetime {
     justify-content: center;
 }
 
-.about-me {
-    display: inline-flexbox;
+div.about-me {
+    display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     margin-top: 150px;
@@ -182,7 +181,7 @@ a:hover {
 
 @media only screen and (max-width: 375px) {
     body {
-        width: 50%;
+        /* width: 50%; */
         /* align-content: center; */
         font-size: 50%;
     }
@@ -192,10 +191,10 @@ a:hover {
     .myphoto {
         max-width: 50%
     }
-    .about-me {
+    /* .about-me {
         width: 50%;
         font-size: 50%;
-    }
+    } */
     .resume {
         width: 50%;
         align-content: center;
@@ -223,7 +222,7 @@ a:hover {
 }
 @media only screen and (max-width: 410px) {
     body {
-        width: 65%;
+        /* width: 65%; */
         /* align-content: center; */
         font-size: 65%;
     }
@@ -233,10 +232,10 @@ a:hover {
     .myphoto {
         max-width: 50%
     }
-    .about-me {
+    /* .about-me {
         width: 50%;
         font-size: 50%;
-    }
+    } */
     .resume {
         width: 50%;
         align-content: center;
@@ -264,7 +263,7 @@ a:hover {
 }
 @media only screen and (max-width: 1000px) {
     body {
-        width: 75%;
+        /* width: 75%; */
         /* align-content: center; */
         font-size: 75%;
     }
