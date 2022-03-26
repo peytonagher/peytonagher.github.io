@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded",
     }
 );
 
-const boardBorder = "#2f2f2f";
-const boardBackground = "#2f2f2f";
+const boardBorder = "#2a2a2a";
+const boardBackground = "#2a2a2a";
 const snakeColor = "#800080";
 const snakeBorder = "#800080";
 
@@ -30,7 +30,7 @@ var boardDimensions = gameCanvas.getContext("2d");
 main();
 foodTime();
 
-document.addEventListener("keydown", changeDirection, false) // add false as 3rd arg here?
+document.addEventListener("keydown", changeDirection) // add false as 3rd arg here?
 
 function main() {       
     if (gameEnd()) {
@@ -44,7 +44,7 @@ function main() {
         moveSnake();
         drawBigSnake();
         main();
-    }, 150)
+    }, 175)
 }
 
 function clearGameCanvas() {

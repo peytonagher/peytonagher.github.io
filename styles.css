@@ -166,7 +166,7 @@ ul li a {
 }
 #gameCanvas {
     position: relative;
-    display: flex;      /* change to flex if no work */
+    display: flex;
     padding-top: 50px;
     /* padding-bottom: 200px; */
     margin-bottom: 200px;
