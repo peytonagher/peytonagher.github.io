@@ -36,7 +36,6 @@ function main() {
     if (gameEnd()) {
         alert(" you lost :( ");
         main();
-        return;
     }
     changingDirection = false;
     setTimeout(function onTick() { 
