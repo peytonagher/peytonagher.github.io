@@ -6,8 +6,8 @@ html {
 body {
     font-family: Helvetica, sans-serif;
     align-content: center;
-    /* align-items: center; */
-    /* margin: auto; */
+    align-items: center; 
+    margin: auto;
 }
 p, div {
     color: whitesmoke;
