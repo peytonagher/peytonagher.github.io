@@ -5,11 +5,12 @@ html {
 }
 body {
     font-family: Helvetica, sans-serif;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 p, div {
     color: whitesmoke;
-    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,7 +39,6 @@ div.about-me {
     margin-left: 50%;
     margin-right: 50%;
     align-items: left;
-    align-content: left;
     justify-content: center;
     text-align: left;
 }
@@ -71,7 +71,7 @@ div.gamecontrols {
 h1,h3,h5,h6 {
     color: whitesmoke;
     font-family: Helvetica, sans-serif;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: 10px;
@@ -80,7 +80,7 @@ h1,h3,h5,h6 {
 h2 {
     font-family: Helvetica, sans-serif;
     color: whitesmoke;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -96,7 +96,7 @@ h2.resume {
 h4 {
     color: whitesmoke;
     font-family: Helvetica, sans-serif;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 50px;
@@ -121,7 +121,7 @@ img.gif {
     margin-bottom: 500px;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
 ul {
@@ -149,7 +149,7 @@ ul li a {
     color: lightgray;
     list-style-type: none;
     display: flex;
-    align-content: center;
+    justify-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -193,7 +193,7 @@ a:hover {
 @media (max-width: 376px) {
     body {
         /* width: 50%; */
-        /* align-content: center; */
+        /* justify-content: center; */
         font-size: 50%;
     }
     div {
@@ -208,17 +208,17 @@ a:hover {
     } */
     .resume {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     .disclaimer {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     .social-media {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     #gameCanvas {
@@ -234,7 +234,7 @@ a:hover {
 @media (max-width: 391px) {
     body {
         /* width: 65%; */
-        /* align-content: center; */
+        /* justify-content: center; */
         font-size: 65%;
     }
     div {
@@ -249,17 +249,17 @@ a:hover {
     } */
     .resume {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     .disclaimer {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     .social-media {
         width: 50%;
-        align-content: center;
+        justify-content: center;
         font-size: 50%;
     }
     #gameCanvas {
@@ -275,7 +275,7 @@ a:hover {
 @media (max-width: 415px) {
     body {
         /* width: 75%; */
-        /* align-content: center; */
+        /* justify-content: center; */
         font-size: 75%;
     }
     div {
@@ -286,22 +286,22 @@ a:hover {
     }
     /* .about-me {
         width: 75%;
-        align-content: center;
+        justify-content: center;
         font-size: 75%;
     } */
     .resume {
         width: 75%;
-        align-content: center;
+        justify-content: center;
         font-size: 75%;
     }
     .disclaimer {
         width: 75%;
-        align-content: center;
+        justify-content: center;
         font-size: 75%;
     }
     .social-media {
         width: 75%;
-        align-content: center;
+        justify-content: center;
         font-size: 75%;
     }
     #gameCanvas {
@@ -324,22 +324,22 @@ a:hover {
     }
     /* .about-me {
         width: 100%;
-        align-content: center;
+        justify-content: center;
         font-size: 100%;
     } */
     .resume {
         width: 100%;
-        align-content: center;
+        justify-content: center;
         font-size: 100%;
     }
     .disclaimer {
         width: 100%;
-        align-content: center;
+        justify-content: center;
         font-size: 100%;
     }
     .social-media {
         width: 100%;
-        align-content: center;
+        justify-content: center;
         font-size: 100%;
     }
     #disclaimer {
