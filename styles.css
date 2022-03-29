@@ -11,7 +11,7 @@ body {
 p, div {
     color: whitesmoke;
     justify-content: center;
-    align-items: center;
+    align-items: scenter;
 }
 
 p.resume {
@@ -20,10 +20,10 @@ p.resume {
     font-size: 16px;
     justify-content: left;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 27%;
 }
 
-p.datetime {
+div.datetime {
     margin: auto;
     display: flex;
     text-align: center;
@@ -34,37 +34,24 @@ div.about-me {
     display: flex;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-    margin-top: 150px;
-    margin-bottom: 500px;
-    margin-left: 50%;
-    margin-right: 50%;
-    align-items: left;
-    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     text-align: left;
+    justify-content: center;
 }
+
 
 div.disclaimer {
     display: flex;
     font-family: Helvetica, sans-serif;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 12px;
-    text-align: left;
-    justify-content: center;
-}
-
-div.gamecontrols {
-    display: flex;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
+    margin-top: 30%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 11px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
 }
 
@@ -75,7 +62,7 @@ h1,h3,h5,h6 {
     align-items: center;
     text-align: center;
     margin-left: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 5%;
 }
 h2 {
     font-family: Helvetica, sans-serif;
@@ -88,8 +75,8 @@ h2 {
 h2.resume {
     text-align: left;
     justify-content: left;
-    margin-left: 50px;
-    margin-bottom: 25px;
+    margin-left: 25%;
+    margin-bottom: 20px;
     margin-top: 25px;
 }
 
@@ -106,13 +93,12 @@ img {
     display: flex;
     margin: auto;
     justify-content: center;
-    background-color: white;
 }
 
 img.myphoto {
     display: flex;
-    margin: auto;
     justify-content: center;
+    margin-top: 5%;
     width: 20%;
 }
 img.gif {
@@ -125,8 +111,8 @@ img.gif {
 }
 
 ul {
-    list-style-type: none;
     display: flex;
+    /* list-style-type: none; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -135,8 +121,6 @@ ul {
     
 }
 ul li {
-    color: lightgray;
-    list-style-type: none;
     display: flex;
     text-align: center;
     align-items: center;
@@ -147,7 +131,6 @@ ul li {
 }
 ul li a {
     color: lightgray;
-    list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,14 +148,14 @@ ul li a {
     display:block;
 }
 #gameCanvas {
-    position: relative;
     display: flex;
     padding-top: 50px;
-    /* padding-bottom: 200px; */
-    margin-bottom: 200px;
+    margin-top: 150px;
+    margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    width: auto;
 }
 
 a:hover {
@@ -190,22 +173,17 @@ a:hover {
     --ipadLG: 1024px;
 }
 
-@media (max-width: 376px) {
-    body {
-        /* width: 50%; */
-        /* justify-content: center; */
-        font-size: 50%;
-    }
+@media (max-width: 375px) {
     div {
         font-size: 50%;
     }
     .myphoto {
         max-width: 50%
     }
-    /* .about-me {
-        width: 50%;
+    .about-me {
+        justify-content: center;
         font-size: 50%;
-    } */
+    }
     .resume {
         width: 50%;
         justify-content: center;
@@ -231,22 +209,17 @@ a:hover {
         width: 50%;
     }
 }
-@media (max-width: 391px) {
-    body {
-        /* width: 65%; */
-        /* justify-content: center; */
-        font-size: 65%;
-    }
+@media (min-width: 376) and (max-width: 390px) {
     div {
         font-size: 50%;
     }
     .myphoto {
         max-width: 50%
     }
-    /* .about-me {
-        width: 50%;
+    .about-me {
+        justify-content: center;
         font-size: 50%;
-    } */
+    }
     .resume {
         width: 50%;
         justify-content: center;
@@ -272,23 +245,17 @@ a:hover {
         width: 55%;
     }
 }
-@media (max-width: 415px) {
-    body {
-        /* width: 75%; */
-        /* justify-content: center; */
-        font-size: 75%;
-    }
+@media (min-width: 391) and (max-width: 428px) {
     div {
         font-size: 75%;
     }
     .myphoto {
         max-width: 75%
     }
-    /* .about-me {
-        width: 75%;
+    .about-me {
         justify-content: center;
         font-size: 75%;
-    } */
+    }
     .resume {
         width: 75%;
         justify-content: center;
@@ -312,40 +279,5 @@ a:hover {
     }
     #gamecontrols {
         width: 75%;
-    }
-}
-@media (min-width: 429px) {
-    body {
-        width: 100%;
-        font-size: 100%;
-    }
-    div {
-        font-size: 100%;
-    }
-    /* .about-me {
-        width: 100%;
-        justify-content: center;
-        font-size: 100%;
-    } */
-    .resume {
-        width: 100%;
-        justify-content: center;
-        font-size: 100%;
-    }
-    .disclaimer {
-        width: 100%;
-        justify-content: center;
-        font-size: 100%;
-    }
-    .social-media {
-        width: 100%;
-        justify-content: center;
-        font-size: 100%;
-    }
-    #disclaimer {
-        width: 100%;
-    }
-    #gamecontrols {
-        width: 100%;
     }
 }
