@@ -158,22 +158,14 @@ ul li a {
     width: auto;
 }
 
-a:hover {
+a.navbar:hover {
     background-size: 50%, 50%;
     background-color: rgb(47, 109, 255);
 }
 
-:root {
-    --iphoneSM: 375px;
-    --iphoneMD: 390px;
-    --iphoneLG: 414px;
-    --iphoneXL: 428px;
-    --ipadSM: 820px;
-    --ipadMD: 834px;
-    --ipadLG: 1024px;
-}
 
 @media (max-width: 375px) {
+    /* iphoneSM: 375px */ 
     div {
         font-size: 50%;
     }
@@ -209,7 +201,9 @@ a:hover {
         width: 50%;
     }
 }
-@media (min-width: 376) and (max-width: 390px) {
+
+@media (min-width: 376) and (max-width: 390px) { 
+    /* iphoneMD: 390px */
     div {
         font-size: 50%;
     }
@@ -245,7 +239,10 @@ a:hover {
         width: 55%;
     }
 }
+
 @media (min-width: 391) and (max-width: 428px) {
+    /* iphoneLG: 414px */
+    /* iphoneXL: 428px */
     div {
         font-size: 75%;
     }
