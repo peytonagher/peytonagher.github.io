@@ -170,7 +170,7 @@ a.navbar:hover {
         font-size: 50%;
     }
     .myphoto {
-        max-width: 50%
+        width: 30%;
     }
     .about-me {
         justify-content: center;
@@ -208,7 +208,7 @@ a.navbar:hover {
         font-size: 50%;
     }
     .myphoto {
-        max-width: 50%
+        width: 30%;
     }
     .about-me {
         justify-content: center;
@@ -247,7 +247,7 @@ a.navbar:hover {
         font-size: 75%;
     }
     .myphoto {
-        max-width: 75%
+        width: 30%;
     }
     .about-me {
         justify-content: center;
