@@ -55,8 +55,9 @@ function clearGameCanvas() {
 }
 
 function makeBeesechurgers() {
-    boardDimensions.fillStyle = "#00FFFF";
-    boardDimensions.strokestyle = "#00FFFF";
+    const foodColor = Math.floor(Math.random()*16777215).toString(16);
+    boardDimensions.fillStyle = foodColor;
+    boardDimensions.strokestyle = foodColor;
     boardDimensions.fillRect(food_x, food_y, 10, 10);
     boardDimensions.strokeRect(food_x, food_y, 10, 10);
 }
