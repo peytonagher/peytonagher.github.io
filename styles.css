@@ -192,7 +192,7 @@ a.navbar:hover {
         font-size: 50%;
     }
     #gameCanvas {
-        width: 50%;
+        display: none;
     }
     #disclaimer {
         width: 50%;
@@ -230,7 +230,7 @@ a.navbar:hover {
         font-size: 50%;
     }
     #gameCanvas {
-        width: 70%;
+        display: none;
     }
     #disclaimer {
         width: 55%;
@@ -269,7 +269,7 @@ a.navbar:hover {
         font-size: 75%;
     }
     #gameCanvas {
-        width: 80%;
+        display: none;
     }
     #disclaimer {
         width: 75%;
