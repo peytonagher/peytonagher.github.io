@@ -31,7 +31,7 @@ var boardDimensions = gameCanvas.getContext("2d");
 main();
 foodTime();
 
-document.addEventListener("keydown", changeDirection) // add false as 3rd arg here?
+document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
@@ -55,8 +55,16 @@ function clearGameCanvas() {
     boardDimensions.strokeRect(0, 0, board.width, board.height);
 }
 
+function rainbowMachine() {
+    let randomHex = Math.random() * 0xFFFFFF;
+    randomHex = Math.floor(randomHex);
+    randomHex = randomHex.toString(16);
+    let color = randomHex.padStart(6,0);
+    return '#' + color.toUpperCase();
+}
+
 function makeBeesechurgers() {
-    const foodColor = Math.floor(Math.random()*16777215).toString(16);
+    let foodColor = rainbowMachine();
     boardDimensions.fillStyle = foodColor;
     boardDimensions.strokestyle = foodColor;
     boardDimensions.fillRect(food_x, food_y, 10, 10);
@@ -107,28 +115,24 @@ function changeDirection(event) {
     const LEFT_KEY = 65;    // A key
     const DOWN_KEY = 83;    // S key
     const RIGHT_KEY = 68;   // D key
-    
     const keyPressed = event.keyCode;
     const goingUp = dy === -10;
     const goingDown = dy === 10;
     const goingRight = dx === 10;  
     const goingLeft = dx === -10;
-    
+
     if (keyPressed === LEFT_KEY && !goingRight) {    
         dx = -10;
         dy = 0;  
     }
-
     if (keyPressed === UP_KEY && !goingDown) {    
         dx = 0;
         dy = -10;
     }
-
     if (keyPressed === RIGHT_KEY && !goingLeft) {    
         dx = 10;
         dy = 0;
     }
-
     if (keyPressed === DOWN_KEY && !goingUp) {    
         dx = 0;
         dy = 10;
@@ -151,12 +155,10 @@ function gameEnd() {
 
 async function sendScore(score) {
     if (!isLoggedIn) return;
-
     const path = '/~/leaderboard.js';
 	const method = 'POST';
 	const headers = { 'Content-Type': 'application/json' }
 	const name = playername;
 	const body = JSON.stringify({ name, score });
-	
 	await fetch(path, { method, headers, body });
 }
