@@ -165,11 +165,11 @@ a.navbar:hover {
     div {
         font-size: 50%;
     }
-    .myphoto {
+    /* .myphoto {
         width: 40%;
         margin-left: 25%;
         margin-right: 25%;
-    }
+    } */
     .about-me {
         justify-content: center;
         font-size: 70%;
@@ -205,11 +205,11 @@ a.navbar:hover {
     div {
         font-size: 50%;
     }
-    .myphoto {
+    /* .myphoto {
         width: 40%;
         margin-left: 25%;
         margin-right: 25%;
-    }
+    } */
     .about-me {
         justify-content: center;
         font-size: 80%;
@@ -246,11 +246,11 @@ a.navbar:hover {
     div {
         font-size: 75%;
     }
-    .myphoto {
+    /* .myphoto {
         width: 40%;
         margin-left: 25%;
         margin-right: 25%;
-    }
+    } */
     .about-me {
         justify-content: center;
         font-size: 90%;
