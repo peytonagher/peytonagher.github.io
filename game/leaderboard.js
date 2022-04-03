@@ -1,5 +1,6 @@
 // some bullshit i wrote with the guidance of a website, snake game will 
 // eventually, at some point, have a leaderboard with top scores
+// https://app.qoom.io/tutorials/leaderboard/guide.md
 
 function load() {
     const name = localStorage.getItem('player');
@@ -14,14 +15,12 @@ function playAsGuest() {
 
 async function createPlayer() {
     const username = document.getElementById('name').value;
-    const password = document.getElementById('password').value;
     if (!username) return alert ('please enter a name');
-    if (!password) return alert ('please enter a password');
 
     const path = '/~/game/login';
 	const method = 'POST';
 	const headers = { 'Content-Type': 'application/json' }
-	const body = JSON.stringify({ username, password });
+	const body = JSON.stringify({ username });
 	const redirect = 'error';
 
     try {
@@ -35,7 +34,7 @@ async function createPlayer() {
 	} 
 
     catch(ex) {
-		alert('check your name and password')
+		alert('check your name')
 	}
 }
 
