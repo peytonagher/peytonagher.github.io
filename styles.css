@@ -146,7 +146,6 @@ ul li a {
 #gameCanvas {
     display: flex;
     padding-top: 50px;
-    margin-top: 150px;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
