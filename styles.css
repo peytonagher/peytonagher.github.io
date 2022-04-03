@@ -5,18 +5,17 @@ html {
 }
 body {
     font-family: Helvetica, sans-serif;
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
 }
 p, div {
-    color: whitesmoke;
     justify-content: center;
-    align-items: scenter;
+    /* align-items: center; */
 }
 
 p.resume {
     display: flex;
-    font-family: Helvetica, sans-serif;
     font-size: 16px;
     justify-content: left;
     text-align: left;
@@ -32,7 +31,6 @@ div.datetime {
 
 div.about-me {
     display: flex;
-    font-family: Helvetica, sans-serif;
     font-size: 16px;
     margin-top: 5%;
     margin-bottom: 40%;
@@ -56,7 +54,6 @@ div.disclaimer {
 }
 
 h1,h3,h5,h6 {
-    color: whitesmoke;
     font-family: Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
@@ -66,7 +63,6 @@ h1,h3,h5,h6 {
 }
 h2 {
     font-family: Helvetica, sans-serif;
-    color: whitesmoke;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -81,7 +77,6 @@ h2.resume {
 }
 
 h4 {
-    color: whitesmoke;
     font-family: Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
@@ -96,10 +91,11 @@ img {
 }
 
 img.myphoto {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     margin-top: 5%;
-    width: 20%;
+    margin-bottom: 5%;
+    width: 30%;
 }
 img.gif {
     display: flex;
@@ -170,7 +166,9 @@ a.navbar:hover {
         font-size: 50%;
     }
     .myphoto {
-        width: 50%;
+        width: 40%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
     .about-me {
         justify-content: center;
@@ -208,7 +206,9 @@ a.navbar:hover {
         font-size: 50%;
     }
     .myphoto {
-        width: 50%;
+        width: 40%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
     .about-me {
         justify-content: center;
@@ -247,7 +247,9 @@ a.navbar:hover {
         font-size: 75%;
     }
     .myphoto {
-        width: 50%;
+        width: 40%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
     .about-me {
         justify-content: center;
