@@ -159,19 +159,19 @@ a.navbar:hover {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     /* iphoneSM: 375px */ 
     div {
-        font-size: 50%;
+        font-size: 70%;
     }
-    /* .myphoto {
+    .myphoto {
         width: 40%;
         margin-left: 25%;
         margin-right: 25%;
-    } */
+    }
     .about-me {
         justify-content: center;
-        font-size: 70%;
+        font-size: 30%;
     }
     .resume {
         width: 50%;
@@ -199,10 +199,10 @@ a.navbar:hover {
     }
 }
 
-@media (min-width: 376) and (max-width: 390px) { 
+@media (min-width: 377) and (max-width: 390px) { 
     /* iphoneMD: 390px */
     div {
-        font-size: 50%;
+        font-size: 70%;
     }
     /* .myphoto {
         width: 40%;
