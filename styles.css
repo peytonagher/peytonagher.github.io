@@ -13,7 +13,6 @@ p, div {
     justify-content: center;
     /* align-items: center; */
 }
-
 p.resume {
     display: flex;
     font-size: 16px;
@@ -21,14 +20,12 @@ p.resume {
     text-align: left;
     margin-left: 27%;
 }
-
 div.datetime {
     margin: auto;
     display: flex;
     text-align: center;
     justify-content: center;
 }
-
 div.about-me {
     display: flex;
     font-size: 16px;
@@ -39,8 +36,6 @@ div.about-me {
     text-align: left;
     justify-content: center;
 }
-
-
 div.disclaimer {
     display: flex;
     font-family: Helvetica, sans-serif;
@@ -52,7 +47,6 @@ div.disclaimer {
     text-align: left;
     justify-content: center;
 }
-
 h1,h3,h5,h6 {
     font-family: Helvetica, sans-serif;
     justify-content: center;
@@ -67,7 +61,6 @@ h2 {
     align-items: center;
     text-align: center;
 }
-
 h2.resume {
     text-align: left;
     justify-content: left;
@@ -75,7 +68,6 @@ h2.resume {
     margin-bottom: 20px;
     margin-top: 25px;
 }
-
 h4 {
     font-family: Helvetica, sans-serif;
     justify-content: center;
@@ -89,7 +81,6 @@ img {
     margin: auto;
     justify-content: center;
 }
-
 img.myphoto {
     /* display: flex; */
     /* justify-content: center; */
@@ -105,7 +96,6 @@ img.gif {
     align-items: center;
     justify-content: center;
 }
-
 ul {
     display: flex;
     /* list-style-type: none; */
@@ -114,7 +104,6 @@ ul {
     justify-content: center;
     margin-bottom: 50px;
     margin-right: 40px;
-    
 }
 ul li {
     display: flex;
@@ -158,9 +147,9 @@ a.navbar:hover {
     background-color: rgb(47, 109, 255);
 }
 
-
-@media (max-width: 376px) {
+@media (min-width: 374) and (max-width: 391px) { 
     /* iphoneSM: 375px */ 
+    /* iphoneMD: 390px */
     .myphoto {
         width: 20%;
         margin-left: 25px;
@@ -186,47 +175,7 @@ a.navbar:hover {
     .social-media {
         width: 50%;
         justify-content: center;
-        font-size: 40%;
-    }
-    #gameCanvas {
-        display: none;
-    }
-    #disclaimer {
-        width: 50%;
-    }
-    #gamecontrols {
-        width: 50%;
-    }
-}
-
-@media (min-width: 377) and (max-width: 390px) { 
-    /* iphoneMD: 390px */
-    div {
-        font-size: 70%;
-    }
-    /* .myphoto {
-        width: 40%;
-        margin-left: 25%;
-        margin-right: 25%;
-    } */
-    .about-me {
-        justify-content: center;
-        font-size: 80%;
-    }
-    .resume {
-        width: 50%;
-        justify-content: center;
-        font-size: 50%;
-    }
-    .disclaimer {
-        width: 50%;
-        justify-content: center;
-        font-size: 50%;
-    }
-    .social-media {
-        width: 50%;
-        justify-content: center;
-        font-size: 50%;
+        font-size: 8px;
     }
     #gameCanvas {
         display: none;
@@ -239,17 +188,17 @@ a.navbar:hover {
     }
 }
 
-@media (min-width: 391) and (max-width: 428px) {
+@media (min-width: 413) and (max-width: 429px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
     div {
         font-size: 75%;
     }
-    /* .myphoto {
-        width: 40%;
-        margin-left: 25%;
-        margin-right: 25%;
-    } */
+    .myphoto {
+        width: 30%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
     .about-me {
         justify-content: center;
         font-size: 90%;
