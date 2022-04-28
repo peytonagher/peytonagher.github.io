@@ -30,10 +30,9 @@ div.about-me {
     font-size: 16px;
     margin-top: 5%;
     margin-bottom: 40%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: left;
-    justify-content: center;
 }
 div.disclaimer {
     display: flex;
@@ -145,7 +144,7 @@ a.navbar:hover {
     background-color: rgb(47, 109, 255);
 }
 
-@media (min-width: 370) and (max-width: 395px) { 
+@media only screen and (max-width: 395px) { 
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
     img.myphoto {
@@ -193,7 +192,7 @@ a.navbar:hover {
     }
 }
 
-@media (min-width: 410) and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
     img.myphoto {
