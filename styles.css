@@ -148,7 +148,7 @@ a.navbar:hover {
 @media (min-width: 370) and (max-width: 395px) { 
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
-    .myphoto {
+    img.myphoto {
         display: flex;
         width: 50%;
         margin-left: 25px;
@@ -173,14 +173,14 @@ a.navbar:hover {
         text-align: left;
         margin-left: 15%;
     }
-    .disclaimer {
+    div.disclaimer {
         width: 65%;
         justify-content: center;
         font-size: 6px;
         margin-left: 20%;
         margin-right: 20%;
     }
-    .social-media {
+    div.social-media {
         width: 50%;
         justify-content: center;
         font-size: 8px;
@@ -196,7 +196,7 @@ a.navbar:hover {
 @media (min-width: 410) and (max-width: 430px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
-    .myphoto {
+    img.myphoto {
         display: flex;
         width: 50%;
         margin-left: 25px;
@@ -221,13 +221,13 @@ a.navbar:hover {
         text-align: left;
         margin-left: 15%;
     }
-    .disclaimer {
+    div.disclaimer {
         justify-content: center;
         font-size: 8px;
         margin-left: 20%;
         margin-right: 20%;
     }
-    .social-media {
+    div.social-media {
         justify-content: center;
         font-size: 8px;
     }
