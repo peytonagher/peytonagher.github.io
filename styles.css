@@ -151,9 +151,11 @@ a.navbar:hover {
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
     .myphoto {
+        display: flex;
         width: 50%;
         margin-left: 25px;
         margin-right: 25px;
+        justify-content: center;
     }
     div.about-me {
         display: flex;
@@ -164,7 +166,7 @@ a.navbar:hover {
         margin-right: 10%;
         text-align: left;
         justify-content: center;
-        align-items center;
+        align-items: center;
     }
     .resume {
         display: flex;
@@ -197,9 +199,11 @@ a.navbar:hover {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
     .myphoto {
+        display: flex;
         width: 50%;
         margin-left: 25px;
         margin-right: 25px;
+        justify-content: center;
     }
     div.about-me {
         display: flex;
