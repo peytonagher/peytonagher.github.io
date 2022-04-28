@@ -178,9 +178,10 @@ a.navbar:hover {
         font-size: 8px;
     }
     .disclaimer {
-        width: 50%;
         justify-content: center;
         font-size: 8px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .social-media {
         width: 50%;
