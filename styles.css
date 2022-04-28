@@ -163,9 +163,11 @@ a.navbar:hover {
         margin-right: 10px;
     }
     .resume {
-        width: 50%;
-        justify-content: center;
+        display: flex;
         font-size: 8px;
+        justify-content: center;
+        text-align: left;
+        margin-left: 15%;
     }
     .disclaimer {
         width: 65%;
@@ -203,8 +205,11 @@ a.navbar:hover {
         margin-right: 10px;
     }
     .resume {
-        justify-content: center;
+        display: flex;
         font-size: 8px;
+        justify-content: center;
+        text-align: left;
+        margin-left: 15%;
     }
     .disclaimer {
         justify-content: center;
