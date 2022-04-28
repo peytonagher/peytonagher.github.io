@@ -164,6 +164,7 @@ a.navbar:hover {
         margin-right: 10%;
         text-align: left;
         justify-content: center;
+        align-items center;
     }
     .resume {
         display: flex;
@@ -209,6 +210,7 @@ a.navbar:hover {
         margin-right: 10%;
         text-align: left;
         justify-content: center;
+        align-items: center;
     }
     .resume {
         display: flex;
