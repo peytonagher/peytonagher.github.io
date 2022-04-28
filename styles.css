@@ -162,14 +162,15 @@ a.navbar:hover {
 @media (max-width: 376px) {
     /* iphoneSM: 375px */ 
     .myphoto {
+        width: 20%;
         margin-left: 25px;
         margin-right: 25px;
     }
     div.about-me {
         justify-content: center;
         font-size: 8px;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .resume {
         width: 50%;
