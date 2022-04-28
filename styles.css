@@ -186,7 +186,7 @@ a.navbar:hover {
     .social-media {
         width: 50%;
         justify-content: center;
-        font-size: 8px;
+        font-size: 40%;
     }
     #gameCanvas {
         display: none;
