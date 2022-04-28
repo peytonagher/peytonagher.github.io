@@ -151,15 +151,14 @@ a.navbar:hover {
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
     .myphoto {
-        width: 20%;
         margin-left: 25px;
         margin-right: 25px;
     }
     div.about-me {
         justify-content: center;
         font-size: 8px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .resume {
         width: 50%;
@@ -169,8 +168,8 @@ a.navbar:hover {
     .disclaimer {
         justify-content: center;
         font-size: 8px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .social-media {
         width: 50%;
@@ -191,17 +190,16 @@ a.navbar:hover {
 @media (min-width: 413) and (max-width: 429px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
-    div {
-        font-size: 75%;
-    }
     .myphoto {
         width: 30%;
         margin-left: 25px;
         margin-right: 25px;
     }
-    .about-me {
+    div.about-me {
         justify-content: center;
-        font-size: 90%;
+        font-size: 8px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .resume {
         width: 75%;
@@ -209,14 +207,15 @@ a.navbar:hover {
         font-size: 75%;
     }
     .disclaimer {
-        width: 75%;
         justify-content: center;
-        font-size: 75%;
+        font-size: 8px;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .social-media {
-        width: 75%;
+        width: 50%;
         justify-content: center;
-        font-size: 75%;
+        font-size: 8px;
     }
     #gameCanvas {
         display: none;
