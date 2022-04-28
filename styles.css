@@ -84,6 +84,8 @@ img.myphoto {
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
     width: 40%;
 }
 img.gif {
@@ -162,7 +164,6 @@ a.navbar:hover {
         margin-left: 10%;
         margin-right: 10%;
         text-align: left;
-        justify-content: center;
         align-items: center;
     }
     .resume {
