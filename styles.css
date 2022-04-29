@@ -76,7 +76,6 @@ h4 {
 }
 img {
     display: flex;
-    margin: auto;
     justify-content: center;
 }
 img.myphoto {
