@@ -83,18 +83,18 @@ img.myphoto {
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
 }
-img.gif {
+/* img.gif {
     display: flex;
     margin-top: 200px;
     margin-bottom: 500px;
     justify-content: center;
     align-items: center;
     justify-content: center;
-}
+} */
 ul {
     display: flex;
     text-align: center;
@@ -150,10 +150,10 @@ a.navbar:hover {
     /* iphoneMD: 390px */
     img.myphoto {
         display: flex;
-        width: 50%;
-        margin-left: 25px;
-        margin-right: 25px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
     }
     div.about-me {
         display: flex;
@@ -165,12 +165,12 @@ a.navbar:hover {
         text-align: left;
         align-items: center;
     }
-    .resume {
+    p.resume {
         display: flex;
         font-size: 8px;
         justify-content: center;
         text-align: left;
-        margin-left: 15%;
+        margin-left: 10%;
     }
     div.disclaimer {
         width: 65%;
@@ -197,10 +197,10 @@ a.navbar:hover {
     /* iphoneXL: 428px */
     img.myphoto {
         display: flex;
-        width: 50%;
-        margin-left: 25px;
-        margin-right: 25px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
     }
     div.about-me {
         display: flex;
@@ -212,12 +212,12 @@ a.navbar:hover {
         text-align: left;
         align-items: center;
     }
-    .resume {
+    p.resume {
         display: flex;
         font-size: 8px;
         justify-content: center;
         text-align: left;
-        margin-left: 15%;
+        margin-left: 10%;
     }
     div.disclaimer {
         justify-content: center;
