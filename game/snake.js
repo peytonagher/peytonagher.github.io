@@ -111,29 +111,33 @@ function foodTime() {
 }
 
 function changeDirection(event) {
-    const UP_KEY = 87;      // W key
-    const LEFT_KEY = 65;    // A key
-    const DOWN_KEY = 83;    // S key
-    const RIGHT_KEY = 68;   // D key
+    const W_KEY = 87;      
+    const A_KEY = 65;    
+    const S_KEY = 83;    
+    const D_KEY = 68;   
+    const UP_ARROW = 38;
+    const LEFT_ARROW = 37;
+    const DOWN_ARROW = 40;
+    const RIGHT_ARROW = 39;
     const keyPressed = event.keyCode;
     const goingUp = dy === -10;
     const goingDown = dy === 10;
     const goingRight = dx === 10;  
     const goingLeft = dx === -10;
 
-    if (keyPressed === LEFT_KEY && !goingRight) {    
+    if (keyPressed === (A_KEY || LEFT_ARROW) && !goingRight) {    
         dx = -10;
         dy = 0;  
     }
-    if (keyPressed === UP_KEY && !goingDown) {    
+    if (keyPressed === (W_KEY || UP_ARROW) && !goingDown) {    
         dx = 0;
         dy = -10;
     }
-    if (keyPressed === RIGHT_KEY && !goingLeft) {    
+    if (keyPressed === (D_KEY || RIGHT_ARROW) && !goingLeft) {    
         dx = 10;
         dy = 0;
     }
-    if (keyPressed === DOWN_KEY && !goingUp) {    
+    if (keyPressed === (S_KEY || DOWN_ARROW) && !goingUp) {    
         dx = 0;
         dy = 10;
     }
