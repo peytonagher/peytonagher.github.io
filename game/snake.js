@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("use wasd to move" + "\nctrl/cmd + r to restart");
+        alert("use wasd/arrow keys to move" + "\nctrl/cmd + r to restart");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -35,6 +35,7 @@ document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
+        alert("try again!");
         main();
         return;
     }

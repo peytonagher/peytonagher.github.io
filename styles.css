@@ -192,7 +192,7 @@ a.navbar:hover {
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (min-width: 396px) and (max-width: 430px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
     img.myphoto {
