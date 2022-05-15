@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en_US">
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "resume">
+        <title>favorite projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" media="all"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navbar" href="index.html" style="text-decoration:none">home</a></li>
+                    <li><a class="navbar" href="resume.html" style="text-decoration:none">resume</a></li>
+                    <li><a class="navbar" href="projects.html" style="text-decoration:none">projects</a></li>
+                    <li><a class="navbar" href="random.html" style="text-decoration:none">random</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <div class="project-page">
+                Below are a few of my favorite/most interesting projects that I have worked on throughout my undergraduate degree.
+                Currently I have only uploaded some CS projects, but I plan on adding some of my EE projects later on.
+            </div>
+            
+            <h2 class="projects">Solitaire (Python)</h2> 
+            <center><div>Key concepts learned/utilized: lists, tuples, working with immutable data types</div></center>
+            <!--add images of program running and div description-->
+            <center><div class="sourcecode"><a class="sourcecode" href="projectfiles/solitairepy.txt" style="text-decoration:none">source code</a></div></center>
+
+            <h2 class="projects">Matrix Calculator (Python)</h2> 
+            <center><div>Key concepts learned/utilized: classes, basic OOP</div></center>
+            <!--add images of program running and div description-->
+            <center><div class="sourcecode"><a class="sourcecode" href="projectfiles/matrixpy.txt" style="text-decoration:none">source code</a></div></center>
+
+            <h2 class="projects">Cellular Automaton (C++)</h2> 
+            <center><div>Key concepts learned/utilized: string manipulation, ASCII, indices, type casting</div></center>
+            <!--add images of program running and div description-->
+            <center><div class="sourcecode"><a class="sourcecode" href="projectfiles/CAcpp.txt" style="text-decoration:none">source code</a></div></center>
+
+            <h2 class="projects">Shopping Manager (C++)</h2> 
+            <center><div>Key concepts learned/utilized: string manipulation, ASCII, indices, type casting</div></center>
+            <!--add images of program running and div description-->
+            <center><div class="sourcecode"><a class="sourcecode" href="projectfiles/shoppingcpp.txt" style="text-decoration:none">source code</a></div></center>
+
+            <!--add DP2 and DP3 Verilog files-->
+
+        </main>
+        <footer>
+            <div class="disclaimer">
+                disclaimer: this website will be a work in progress until further notice.
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/peyton-nagher-570044201/" target="_blank"><img  src = "media/linkedinlogo.png" style="width:90%"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/peytonagher" target="_blank"><img  src = "media/githublogo.png" style="width:90%"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="datetime"><span id="datetime"></span></div>
+            <script>
+                var date =  new Date();
+                document.getElementById("datetime").innerHTML = (("0" + (date.getMonth() + 1)).slice(-2)) + "." + 
+                (("0" + date.getDate()).slice(-2)) + "." + (date.getFullYear());
+            </script>
+            <h4>est. 2021</h4>
+            <br><br>
+        </footer>
+    </body>
+</html>
