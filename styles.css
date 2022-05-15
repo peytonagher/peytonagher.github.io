@@ -187,8 +187,8 @@ a.navbar:hover {
     }
     p.resume {
         display: flex;
-        font-size: 8px;
-        justify-content: center;
+        font-size: 10px;
+        justify-content: left;
         text-align: left;
     }
     div.disclaimer {
@@ -233,10 +233,9 @@ a.navbar:hover {
     }
     p.resume {
         display: flex;
-        font-size: 8px;
-        justify-content: center;
+        font-size: 10px;
+        justify-content: left;
         text-align: left;
-        margin-left: 10%;
     }
     div.disclaimer {
         justify-content: center;
