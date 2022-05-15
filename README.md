@@ -1,9 +1,6 @@
 
-to do next:
+to do:
 
-- add leaderboard with player scores to snake game
-- use media queries to properly display website on mobile
-  - image & about me too skinny (home)
-  - main content shifted weirdly (resume)
-  - replace game (random)
-- konami code
+- media queries
+- add more projects
+- snake leaderboard & konami code
