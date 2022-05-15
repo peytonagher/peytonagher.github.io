@@ -173,7 +173,7 @@ a.navbar:hover {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 30%;
+        width: 40%;
     }
     div.about-me {
         display: flex;
@@ -190,7 +190,6 @@ a.navbar:hover {
         font-size: 8px;
         justify-content: center;
         text-align: left;
-        margin-left: 10%;
     }
     div.disclaimer {
         width: 65%;
@@ -220,7 +219,7 @@ a.navbar:hover {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 35%;
+        width: 45%;
     }
     div.about-me {
         display: flex;
