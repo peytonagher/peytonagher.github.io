@@ -26,8 +26,8 @@ div.about-me {
     font-size: 16px;
     margin-top: 5%;
     margin-bottom: 40%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: left;
 }
 div.project-page {
@@ -38,8 +38,10 @@ div.project-page {
     margin-left: 35%;
     margin-right: 35%;
     text-align: left;
+    justify-content: center;
 }
 div.proj-description {
+    font-size: 12px;
     text-align: left;
     justify-content: left;
     margin-left: 34%;
@@ -217,8 +219,10 @@ a.navbar:hover {
         margin-left: 15%;
         margin-right: 15%;
         text-align: left;
+        justify-content: center;
     }
     div.proj-description {
+        font-size: 12px;
         text-align: left;
         justify-content: left;
         margin-left: 5%;
@@ -255,8 +259,8 @@ a.navbar:hover {
         font-size: 8px;
         margin-top: 5%;
         margin-bottom: 35%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: left;
         align-items: center;
     }
@@ -291,8 +295,10 @@ a.navbar:hover {
         margin-left: 15%;
         margin-right: 15%;
         text-align: left;
+        justify-content: center;
     }
     div.proj-description {
+        font-size: 12px;
         text-align: left;
         justify-content: left;
         margin-left: 5%;

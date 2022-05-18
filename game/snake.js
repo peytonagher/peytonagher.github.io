@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("use wasd/arrow keys to move" + "\nctrl/cmd + r to restart");
+        alert("use wasd/arrow keys to move" + "\nctrl/cmd + r to restart" 
+        + "\n\nnote: this page is for desktop browser use only");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
