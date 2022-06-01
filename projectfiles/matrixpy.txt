@@ -1,7 +1,9 @@
 class Matrix(object):
+
+    '''This function initializes a matrix with default row/column values
+    of 2'''
+
     def __init__(self,num_rows = 2,num_cols = 2):
-        '''This function initializes a matrix with default row/column values
-        of 2'''
         self.num_rows = num_rows
         self.num_cols = num_cols
         self.array = []
@@ -14,8 +16,9 @@ class Matrix(object):
             self.array.append(row)
 
 
+    '''This function returns a string of the matrix'''
+
     def __str__(self):
-        '''This function returns a string of the matrix'''
         matrix_string = ""
         base_str = str(self.array)
         base_str = base_str.replace(",","")
@@ -33,14 +36,16 @@ class Matrix(object):
         return matrix_string
 
 
+    '''Returns the same output as __str__'''
+
     def __repr__(self):
-        '''Returns the same output as __str__'''
         return self.__str__()
 
 
+    '''This function gets the values from the matrix with iijj serving as
+    indexes'''
+
     def __getitem__(self, iijj):
-        '''This function gets the values from the matrix with iijj serving as
-        indexes'''
         if (type(iijj) is not tuple) and (type(iijj) is not int):
             raise ValueError("Matrix: Error, the indices must be a positive integer or a tuple of integers!")
         if type(iijj) is tuple: # accounts for tuple indexes
@@ -59,8 +64,9 @@ class Matrix(object):
             return self.array[iijj - 1]
 
 
+    '''This function allows the ability to set values from the matrix'''
+
     def __setitem__(self, iijj, value):
-        '''This function allows the ability to set values from the matrix'''
         if (type(value) is not int) and (type(value) is not float):
             raise ValueError("Matrix: Error, You can only assign a float or int to a matrix!")
         if type(iijj) is tuple:
@@ -75,8 +81,9 @@ class Matrix(object):
         self.array[iijj[0] - 1][iijj[1] - 1] = value
 
 
+    '''This function performs matrix addition and returns a new matrix'''
+
     def __add__(self,B):
-        '''This function performs matrix addition and returns a new matrix'''
         if type(B) is not Matrix:
             raise ValueError("Matrix: Error, you can only add a matrix to another matrix!")
         A_rows, A_cols = self.num_rows, self.num_cols
@@ -90,8 +97,9 @@ class Matrix(object):
         return result_matrix
 
 
+    '''This function processes and returns the dot product of two lists of
+
     def dot_product(self,L1,L2):
-        '''This function processes and returns the dot product of two lists of
         numbers'''
         if len(L2) != len(L1):
             raise ValueError("Dot Product: must be same length")
@@ -101,9 +109,10 @@ class Matrix(object):
         return result 
 
 
+    '''This function performs matrix multiplication which utilizes the dot 
+    product function and returns a new matrix'''
+
     def __mul__(self,B):
-        '''This function performs matrix multiplication which utilizes the dot 
-        product function and returns a new matrix'''
         if (type(B) is not Matrix) or (type(self) is not Matrix):
             raise ValueError("Matrix: Error, you can only multiply a matrix to another matrix!")
         elif self.num_cols != B.num_rows:
@@ -134,8 +143,9 @@ class Matrix(object):
             return matrix
 
 
+    '''This function returns a transposed matrix as a new matrix'''
+
     def transpose(self):
-        '''This function returns a transposed matrix as a new matrix'''
         A_rows = self.num_rows
         A_cols = self.num_cols
         result_matrix = Matrix(A_cols, A_rows)
@@ -147,9 +157,10 @@ class Matrix(object):
         return result_matrix
 
 
+    '''This function evaluates if the matrix dimensions are equal or not
+    and returns a boolean value'''
+
     def __eq__(self,B):
-        '''This function evaluates if the matrix dimensions are equal or not
-        and returns a boolean value'''
         if type(B) is not Matrix: # checks for type of B
             return False
         if (self.num_rows != B.num_rows) or (self.num_cols != B.num_cols):
@@ -164,9 +175,10 @@ class Matrix(object):
                     return True # returns True if rows/columns are equal
 
 
+    '''This function performs scalar multiplication (multiplication of
+    a scalar and a matrix)'''
+
     def __rmul__(self,i):
-        '''This function performs scalar multiplication (multiplication of
-        a scalar and a matrix)'''
         if type(i) is not int:
             raise ValueError("Matrix Error: scaler must be an int.")
         result_matrix = Matrix(self.num_rows,self.num_cols)

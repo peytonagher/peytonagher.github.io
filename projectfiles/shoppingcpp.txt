@@ -7,7 +7,8 @@
 using std::string;
 using std::vector;
 
-// Represents a product that a store sells, has a name, quantity, and price per
+// Item class represents a product that a store sells, has a name, quantity, and price per
+
 class Item
 {
 private:
@@ -43,8 +44,9 @@ public:
 
 
 
-// Represents a store that has an inventory of items, each of the Item class
+// Store class represents a store that has an inventory of items, each of the Item class
 // Has a name, location, and an inventory of items for sale
+
 class Store
 {
 private:
@@ -106,6 +108,7 @@ using std::string;
 using std::vector;
 
 // Functions associated with the Item class
+
 Item::Item(const Item &item)
 {
     _name_ = item.name();
@@ -129,6 +132,7 @@ void Item::price(int price)
 }
 
 // Functions associated with the Store class
+
 Store::Store(const Store &store)
 {
     _name_ = store.name();
@@ -157,8 +161,10 @@ int Store::item_size()
     return static_cast<int>(_items_.size());
 }
 
+
 // This purchase function handles the total price of a quantity of items
 // where to buy them from, and prioritizes the cheapest option
+
 void purchase(const vector<Store> &stores, Item &list_item, const vector<pair<int, int>> &listed_for_sale, int &item_total_price)
 {
     vector<string> print_out_orders;
@@ -190,8 +196,10 @@ void purchase(const vector<Store> &stores, Item &list_item, const vector<pair<in
     }
 }
 
+
 // This selling_stores helper function assists in finding the lowest price
 // among a vector of purchase options
+
 void selling_stores(const vector<Store> &stores, const Item &list_item, vector<pair<int, int>> &listed_for_sale)
 {
     for (int i = 0; i < static_cast<int>(stores.size()); ++i)
@@ -204,12 +212,15 @@ void selling_stores(const vector<Store> &stores, const Item &list_item, vector<p
             }
         }
     }
-    //makes sure that the lowest price is first
+    // below code makes sure that the lowest price is first
+
     sort(listed_for_sale.begin(), listed_for_sale.end(), [stores](pair<int, int> p1, pair<int, int> p2)
          { return (stores[p1.first].items()[p1.second].price() < stores[p2.first].items()[p2.second].price()); });
 }
 
+
 // This helper function grabs name and quantity information about an item
+
 void get_item(Item &item)
 {
     string item_name = "";
@@ -224,8 +235,10 @@ void get_item(Item &item)
     item.quantity(item_quantity);
 }
 
+
 // This function handles making a new store initialized with items for sale
 // Gives the store a name, location, and items a name, quantity, and price
+
 void new_store(vector<Store> &store)
 {
     string store_name = "";
@@ -254,8 +267,10 @@ void new_store(vector<Store> &store)
     store.push_back(new_store);
 }
 
+
 // This function handles input from the shopping list and starts the process
 // of determining where to buy each item on the shopping list
+
 void shopping_handler(const vector<Store> &stores, int num_shopping_items, Item list_item)
 {
     int item_total_price = 0;
@@ -275,8 +290,10 @@ void shopping_handler(const vector<Store> &stores, int num_shopping_items, Item 
     cout << "Be sure to bring $" << (static_cast<double>(balance_due) / 100.00) << " when you leave for the stores." << endl;
 }
 
+
 // This function builds store inventories (represented as a map) depending on
 // the number of stores and store contents from input
+
 void item_handler(const vector<Store> &stores, map<string, int> inventory)
 {
     for (Store s : stores)
@@ -293,8 +310,10 @@ void item_handler(const vector<Store> &stores, map<string, int> inventory)
     }
 }
 
+
 // This function adds stores based on user input and constructs them as instances
 // of Store with the new_store function
+
 void store_handler(vector<Store> &stores, int num_stores)
 {
     for (int i = 0; i < num_stores; i++)
@@ -303,6 +322,7 @@ void store_handler(vector<Store> &stores, int num_stores)
         cout << stores[i].name() << " has " << stores[i].item_size() << " distinct items." << endl;
     }
 }
+
 
 int main()
 {

@@ -6,9 +6,10 @@ using std::endl;
 using std::string;
 using std::to_string;
 
-int get_line_sum(string start)
 /* This function takes a string of CA numbers and returns the sum
 of them */
+
+int get_line_sum(string start)
 {
     int total = 0;
     for (int i = 0; i < static_cast<int>(start.length()); i++)
@@ -18,10 +19,11 @@ of them */
     return total;
 }
 
-char get_next_state(string start, string rules)
 /* This function uses a 3 character string as a code to scan a 
 multiline string for a match and returns the corresponding value
 of that match as a char */
+
+char get_next_state(string start, string rules)
 {
     int length = static_cast<int>(rules.length());
     for (int i = 0; i < length - 1; i++)
@@ -42,12 +44,13 @@ of that match as a char */
     return 0;
 }
 
-void update_line(string &start, string rules)
 /* This function takes a reference to a 7 character start string
 representing the current generation of CA and updates each
 character throughout the length of the start string 
 with a multiline rules string when passing into the
 get_next_state function */
+
+void update_line(string &start, string rules)
 {
     string temp = "";
     int length = static_cast<int>(start.length());
@@ -81,11 +84,12 @@ get_next_state function */
     start = temp;
 }
 
-string run_cellular_automata(string rules, int n, string start)
 /* This function takes a multiline string of rules, an int for how many
 generations to update the CA, and a start state string, it returns a 
 multiline string representing each successive step of CA and the sum
 of the digits across the same step of CA */
+
+string run_cellular_automata(string rules, int n, string start)
 {
     string line = "";
     line += start + " sum = " + to_string(get_line_sum(start)) + '\n';

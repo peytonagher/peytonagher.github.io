@@ -14,9 +14,10 @@ Input options:
     Q: Quit the game       \n'''
 
 
-def initialize():
     '''Creates and initializes the tableau, foundation, and cells
     returning them as a tuple'''
+
+def initialize():
     foundation = [[],[],[],[]]
     tableau = [[],[],[],[],[],[],[],[],[],[]]
     cells = []
@@ -35,9 +36,10 @@ def initialize():
     return (tableau, foundation, cells)
 
 
-def display(tableau, foundation, cells):
     '''Display the cell and foundation at the top.
     Display the tableau below.'''
+
+def display(tableau, foundation, cells):
     print("\n{:<11s}{:^16s}{:>10s}".format( "foundation","cell", "foundation"))
     print("{:>14s}{:>4s}{:>4s}{:>4s}".format( "1","2","3","4"))
     for i,f in enumerate(foundation):
@@ -77,8 +79,9 @@ def display(tableau, foundation, cells):
     print()  # carriage return after printing the whole tableau
 
 
-def validate_move_within_tableau(tableau,source_index,destination_index):
     '''Determines if the player can move a card within their tableau'''
+
+def validate_move_within_tableau(tableau,source_index,destination_index):
     if len(tableau[destination_index]) == 0:
         if tableau[source_index][-1].rank() == 13: # 13 cards per suit
             return True
@@ -99,8 +102,9 @@ def validate_move_within_tableau(tableau,source_index,destination_index):
             return False
 
 
-def validate_move_cell_to_tableau(tableau,cells,cell_no,destination_index):
     '''Determines if the player can move a card from a cell to the tableau'''
+
+def validate_move_cell_to_tableau(tableau,cells,cell_no,destination_index):
     if (cells[cell_no]) == None:
         return False
     if len(tableau[destination_index]) == 0:
@@ -120,8 +124,9 @@ def validate_move_cell_to_tableau(tableau,cells,cell_no,destination_index):
             return False
 
 
-def validate_move_tableau_to_cell(tableau,cells,source_index,cell_no):
     '''Determines if the player can move a card from the tableau to a cell'''
+
+def validate_move_tableau_to_cell(tableau,cells,source_index,cell_no):
     if not len(tableau[source_index]) == 0:
         if ((source_index < 10) and (source_index > -10)) or \
             ((cell_no < 4) and (cell_no > 0)):
@@ -135,9 +140,10 @@ def validate_move_tableau_to_cell(tableau,cells,source_index,cell_no):
         return False
 
 
-def validate_move_tableau_to_foundation(tableau,foundation,source_index,found_no):
     '''Determines if the player can move a card from the tableau to one of
     the foundation piles'''
+
+def validate_move_tableau_to_foundation(tableau,foundation,source_index,found_no):
     if ((source_index < 10) and (source_index > 0)) or \
         ((found_no < 10) and (found_no > 0)):
         if len(foundation[found_no]) == 0:
@@ -162,9 +168,10 @@ def validate_move_tableau_to_foundation(tableau,foundation,source_index,found_no
         return False
 
 
-def validate_move_cell_to_foundation(cells,foundation,cell_no,found_no):
     '''Determines if the player can move a card from a cell to one of the 
     foundation piles'''
+
+def validate_move_cell_to_foundation(cells,foundation,cell_no,found_no):
     if ((cell_no < 5) and (cell_no > 0)) or ((found_no < 10) and \
         (found_no > 0)):
         if cells[cell_no] != None:
@@ -189,8 +196,9 @@ def validate_move_cell_to_foundation(cells,foundation,cell_no,found_no):
         return False
 
 
-def move_within_tableau(tableau,source_index,destination_index):
     '''Moves a card from one tableau column to another tableau column'''
+
+def move_within_tableau(tableau,source_index,destination_index):
     if validate_move_within_tableau(tableau,source_index,destination_index)\
         == True:
         card = tableau[source_index].pop(-1) # pops the bottom card
@@ -200,8 +208,9 @@ def move_within_tableau(tableau,source_index,destination_index):
         return False
 
 
-def move_tableau_to_cell(tableau,cells,source_index,cell_no):
     '''Moves a card from one tableau column to a cell'''
+
+def move_tableau_to_cell(tableau,cells,source_index,cell_no):
     if validate_move_tableau_to_cell(tableau,cells,source_index,cell_no)\
         == True:
         card = tableau[source_index].pop(-1) # pops the bottom card
@@ -211,8 +220,9 @@ def move_tableau_to_cell(tableau,cells,source_index,cell_no):
         return False
 
 
-def move_cell_to_tableau(tableau,cells,cell_no,destination_index):
     '''Moves a card from one cell to a tableau column'''
+
+def move_cell_to_tableau(tableau,cells,cell_no,destination_index):
     if validate_move_cell_to_tableau(tableau,cells,cell_no,destination_index)\
         == True:
         card = cells[cell_no] # takes card from cell
@@ -223,9 +233,10 @@ def move_cell_to_tableau(tableau,cells,cell_no,destination_index):
         return False
 
 
-def move_tableau_to_foundation(tableau,foundation,source_index,found_no):
     '''Moves a card from one tableau column to one of the foundation
     piles'''
+
+def move_tableau_to_foundation(tableau,foundation,source_index,found_no):
     if validate_move_tableau_to_foundation(tableau,foundation,source_index,\
         found_no) == True:
         card = tableau[source_index].pop(-1) # pops the bottom card
@@ -235,8 +246,9 @@ def move_tableau_to_foundation(tableau,foundation,source_index,found_no):
         return False
 
 
-def move_cell_to_foundation(cells,foundation,cell_no,found_no):
     '''Moves a card from one cell to one of the foundation piles'''
+
+def move_cell_to_foundation(cells,foundation,cell_no,found_no):
     if validate_move_cell_to_foundation(cells,foundation,cell_no,found_no)\
         == True:
         card = cells[cell_no] # card is pulled from the specific cell
@@ -247,8 +259,9 @@ def move_cell_to_foundation(cells,foundation,cell_no,found_no):
         return False
 
 
-def check_for_win(foundation):
     '''Checks the foundation piles to see if all four foundations total to 52'''
+
+def check_for_win(foundation):
     result = False
     for fnd in foundation:
         if len(fnd) == 13: # each foundation has to total 13, 52/4 suits = 13
@@ -259,7 +272,6 @@ def check_for_win(foundation):
     return result
 
 
-def get_option():
     '''Prompt the user for an option and check that the input has the 
     form requested in the menu, printing an error message, if not.
     Return:
@@ -272,6 +284,8 @@ def get_option():
     H: Display this menu of choices
     Q: Quit the game        
     '''
+
+def get_option():
     option = input( "\nInput an option (MTT,MTC,MCT,MTF,MCF,R,H,Q): " )
     option_list = option.strip().split()
     opt_char = option_list[0][0].upper()
@@ -291,7 +305,7 @@ def main():
     tableau, foundation, cells = initialize()
     display(tableau, foundation, cells)
     print(MENU)
-    option = get_option() # calls option function to get the specific move
+    option = get_option()   # calls option function to get the specific move
     while option[0].isalpha():
         if option[0] == "MTT":
             source_index = option[1] - 1
@@ -311,7 +325,6 @@ def main():
                     option = get_option()
                     continue
             else:
-                
                 print("Error in move: {} , {} , {}".format(option[0],\
                     str(option[1]),str(option[2])))
                 option = get_option()
