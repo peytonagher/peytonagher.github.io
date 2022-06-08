@@ -32,9 +32,7 @@ div.about-me {
 }
 div.project-page {
     display: flex;
-    font-size: 14px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 15px;
     margin-left: 35%;
     margin-right: 35%;
     text-align: left;
