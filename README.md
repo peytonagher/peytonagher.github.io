@@ -1,6 +1,8 @@
 
 to do:
 
-- media queries
-- add more projects
+- fix media queries
+	- right margin on proj descriptions
+	- left margin on resume page
+- add more projects & screenshots
 - snake leaderboard & konami code
