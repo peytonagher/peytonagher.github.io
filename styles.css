@@ -39,13 +39,18 @@ div.project-page {
     justify-content: center;
 }
 div.proj-description {
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
     justify-content: left;
     margin-left: 34%;
     margin-right: 34%;
     margin-bottom: 15px;
     margin-top: 25px;
+}
+div.proj-pics {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
 }
 div.disclaimer {
     display: flex;
