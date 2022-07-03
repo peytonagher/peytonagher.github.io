@@ -36,8 +36,8 @@ document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
-        alert("try again!");
-        main();
+        alert("you died! try again");
+        document.location.reload(true);
         return;
     }
     changingDirection = false;
