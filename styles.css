@@ -173,11 +173,11 @@ a.navbar:hover {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 45%;
+        width: 50%;
     }
     div.about-me {
         display: flex;
-        font-size: 8px;
+        font-size: 10px;
         margin-top: 5%;
         margin-bottom: 35%;
         margin-left: 10%;
@@ -195,8 +195,9 @@ a.navbar:hover {
     p.resume {
         display: flex;
         font-size: 10px;
-        justify-content: left;
         text-align: left;
+        justify-content: left;
+        margin-right: 10%;
     }
     div.disclaimer {
         width: 65%;
@@ -254,7 +255,7 @@ a.navbar:hover {
     }
     div.about-me {
         display: flex;
-        font-size: 8px;
+        font-size: 12px;
         margin-top: 5%;
         margin-bottom: 35%;
         margin-left: 15%;
@@ -272,8 +273,9 @@ a.navbar:hover {
     p.resume {
         display: flex;
         font-size: 10px;
-        justify-content: left;
         text-align: left;
+        justify-content: left;
+        margin-right: 10%;
     }
     div.disclaimer {
         justify-content: center;
@@ -301,13 +303,6 @@ a.navbar:hover {
         justify-content: left;
         margin-left: 5%;
         margin-bottom: 15px;
-        margin-top: 25px;
-    }
-        h2.resume {
-        text-align: left;
-        justify-content: left;
-        margin-left: 15%;
-        margin-bottom: 20px;
         margin-top: 25px;
     }
     h2.projects {

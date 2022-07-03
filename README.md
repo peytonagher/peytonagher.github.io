@@ -2,7 +2,8 @@
 to do:
 
 - fix media queries
-	- right margin on proj descriptions
-	- left margin on resume page
+	- resume page html to fix mobile displaying
+
 - add more projects & screenshots
+- implement react
 - snake leaderboard & konami code
