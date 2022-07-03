@@ -43,6 +43,7 @@ div.proj-description {
     text-align: left;
     justify-content: left;
     margin-left: 34%;
+    margin-right: 34%
     margin-bottom: 15px;
     margin-top: 25px;
 }
@@ -225,6 +226,7 @@ a.navbar:hover {
         text-align: left;
         justify-content: left;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 15px;
         margin-top: 25px;
     }
@@ -302,6 +304,7 @@ a.navbar:hover {
         text-align: left;
         justify-content: left;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 15px;
         margin-top: 25px;
     }
