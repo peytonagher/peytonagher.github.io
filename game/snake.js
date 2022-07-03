@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
-        alert("use wasd/arrow keys to move" + "\nctrl/cmd + r to restart" 
+        alert("use wasd keys to move" + "\nctrl/cmd + r to restart" 
         + "\n\nnote: this page is for desktop browser use only");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded",
 
 const boardBorder = "#2a2a2a";
 const boardBackground = "#2a2a2a";
-const snakeColor = "#800080";
-const snakeBorder = "#800080";
+const snakeColor = rainbowMachine();
+const snakeBorder = rainbowMachine();
+const foodColor = rainbowMachine();
 
 let snake = [{x: 200, y: 200}, 
             {x: 190, y: 200}, 
@@ -36,7 +37,7 @@ document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
-        alert("you died! try again", "\nscore:", score);
+        alert("you died! try again" + "\nscore: " + score);
         document.location.reload(true);
         return;
     }
@@ -47,14 +48,7 @@ function main() {
         moveSnake();
         drawBigSnake();
         main();
-    }, 175)
-}
-
-function clearGameCanvas() {
-    boardDimensions.fillStyle = boardBackground;
-    boardDimensions.strokestyle = boardBorder;
-    boardDimensions.fillRect(0, 0, board.width, board.height);
-    boardDimensions.strokeRect(0, 0, board.width, board.height);
+    }, 75)
 }
 
 function rainbowMachine() {
@@ -65,8 +59,14 @@ function rainbowMachine() {
     return '#' + color.toUpperCase();
 }
 
+function clearGameCanvas() {
+    boardDimensions.fillStyle = boardBackground;
+    boardDimensions.strokestyle = boardBorder;
+    boardDimensions.fillRect(0, 0, board.width, board.height);
+    boardDimensions.strokeRect(0, 0, board.width, board.height);
+}
+
 function makeBeesechurgers() {
-    let foodColor = rainbowMachine();
     boardDimensions.fillStyle = foodColor;
     boardDimensions.strokestyle = foodColor;
     boardDimensions.fillRect(food_x, food_y, 10, 10);
@@ -79,7 +79,7 @@ function moveSnake() {
     const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
     if (gotNomNoms) {
         foodTime();
-        score++; // will go here or in foodTime
+        score += 1; // will go here or in foodTime
     }
     else {
         snake.pop();
@@ -108,38 +108,34 @@ function foodTime() {
         const isFull = part.x == food_x && part.y == food_y;
         if (isFull) {
             foodTime();
-            score++; // will go here or in moveSnake
+            score += 1; // will go here or in moveSnake
         }});
 }
 
 function changeDirection(event) {
-    const W_KEY = 87;      
-    const A_KEY = 65;    
-    const S_KEY = 83;    
-    const D_KEY = 68;   
-    const UP_ARROW = 38;
-    const LEFT_ARROW = 37;
-    const DOWN_ARROW = 40;
-    const RIGHT_ARROW = 39;
+    const W_KEY = 87;
+    const A_KEY = 65;
+    const S_KEY = 83;
+    const D_KEY = 68;
     const keyPressed = event.keyCode;
     const goingUp = dy === -10;
     const goingDown = dy === 10;
     const goingRight = dx === 10;  
     const goingLeft = dx === -10;
 
-    if (keyPressed === (A_KEY || LEFT_ARROW) && !goingRight) {    
+    if (keyPressed === (A_KEY) && !goingRight) {    
         dx = -10;
         dy = 0;  
     }
-    if (keyPressed === (W_KEY || UP_ARROW) && !goingDown) {    
+    if (keyPressed === (W_KEY) && !goingDown) {    
         dx = 0;
         dy = -10;
     }
-    if (keyPressed === (D_KEY || RIGHT_ARROW) && !goingLeft) {    
+    if (keyPressed === (D_KEY) && !goingLeft) {    
         dx = 10;
         dy = 0;
     }
-    if (keyPressed === (S_KEY || DOWN_ARROW) && !goingUp) {    
+    if (keyPressed === (S_KEY) && !goingUp) {    
         dx = 0;
         dy = 10;
     }
@@ -158,6 +154,7 @@ function gameEnd() {
     const hitBottomWall = snake[0].y > board.height - 10;
     return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
 }
+
 
 async function sendScore(score) {
     if (!isLoggedIn) return;

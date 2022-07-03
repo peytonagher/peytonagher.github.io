@@ -1,4 +1,4 @@
-// header file with classes
+// classes.hpp header file
 
 #pragma once
 #include<iostream>

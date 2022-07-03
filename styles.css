@@ -13,12 +13,19 @@ body {
 p, div {
     justify-content: center;
 }
-p.resume {
+p.resumeContent {
     display: flex;
     font-size: 16px;
     justify-content: left;
     text-align: left;
-    margin-left: 27%;
+    margin-left: 34%;
+}
+p.resumeDetail {
+    display: flex;
+    font-size: 15px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 36%;
 }
 
 div.about-me {
@@ -84,10 +91,10 @@ h2 {
     align-items: center;
     text-align: center;
 }
-h2.resume {
+h2.resumeHeader {
     text-align: left;
     justify-content: left;
-    margin-left: 25%;
+    margin-left: 31%;
     margin-bottom: 20px;
     margin-top: 25px;
 }
@@ -171,6 +178,7 @@ a.navbar:hover {
     background-color: rgb(47, 109, 255);
 }
 
+
 @media only screen and (max-width: 395px) { 
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
@@ -179,31 +187,38 @@ a.navbar:hover {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 55%;
     }
     div.about-me {
         display: flex;
         font-size: 10px;
         margin-top: 5%;
         margin-bottom: 35%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         text-align: left;
         align-items: center;
     }
-    h2.resume {
+    h2.resumeHeader {
         text-align: left;
         justify-content: left;
         margin-left: 10%;
         margin-bottom: 20px;
         margin-top: 25px;
     }
-    p.resume {
+    p.resumeContent {
         display: flex;
-        font-size: 10px;
-        text-align: left;
+        font-size: 16px;
         justify-content: left;
-        margin-right: 10%;
+        text-align: left;
+        margin-left: 27%;
+    }
+    p.resumeDetail {
+        display: flex;
+        font-size: 15px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 30%;
     }
     div.disclaimer {
         width: 65%;
@@ -250,6 +265,7 @@ a.navbar:hover {
     }
 }
 
+
 @media only screen and (min-width: 396px) and (max-width: 430px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
@@ -270,19 +286,26 @@ a.navbar:hover {
         text-align: left;
         align-items: center;
     }
-    h2.resume {
+    h2.resumeHeader {
         text-align: left;
         justify-content: left;
         margin-left: 10%;
         margin-bottom: 20px;
         margin-top: 25px;
     }
-    p.resume {
+    p.resumeContent {
         display: flex;
-        font-size: 10px;
-        text-align: left;
+        font-size: 16px;
         justify-content: left;
-        margin-right: 10%;
+        text-align: left;
+        margin-left: 27%;
+    }
+    p.resumeDetail {
+        display: flex;
+        font-size: 15px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 30%;
     }
     div.disclaimer {
         justify-content: center;

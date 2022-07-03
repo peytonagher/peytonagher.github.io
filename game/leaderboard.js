@@ -1,4 +1,4 @@
-// some bullshit i wrote with the guidance of a website, snake game will 
+// some js i wrote with the guidance of a website, snake game will 
 // eventually, at some point, have a leaderboard with top scores
 // https://app.qoom.io/tutorials/leaderboard/guide.md
 
