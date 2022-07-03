@@ -37,7 +37,7 @@ document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
-        alert("you died! try again" + "\nscore: " + score);
+        alert("try again, " + "score: " + score);
         document.location.reload(true);
         return;
     }
