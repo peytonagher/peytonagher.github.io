@@ -108,7 +108,8 @@ function foodTime() {
         const isFull = part.x == food_x && part.y == food_y;
         if (isFull) {
             foodTime();
-        }});
+        }
+    });
 }
 
 function changeDirection(event) {

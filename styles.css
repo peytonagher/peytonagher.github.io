@@ -211,14 +211,14 @@ a.navbar:hover {
         font-size: 16px;
         justify-content: left;
         text-align: left;
-        margin-left: 27%;
+        margin-left: 13%;
     }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
-        margin-left: 30%;
+        margin-left: 16%;
     }
     div.disclaimer {
         width: 65%;
@@ -298,14 +298,14 @@ a.navbar:hover {
         font-size: 16px;
         justify-content: left;
         text-align: left;
-        margin-left: 27%;
+        margin-left: 13%;
     }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
-        margin-left: 30%;
+        margin-left: 16%;
     }
     div.disclaimer {
         justify-content: center;
