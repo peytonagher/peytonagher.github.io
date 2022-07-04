@@ -108,7 +108,7 @@ function foodTime() {
         const isFull = part.x == food_x && part.y == food_y;
         if (isFull) {
             foodTime();
-            //score += 1; // will go here or in moveSnake
+            score += 1; // will go here or in moveSnake
         }});
 }
 
