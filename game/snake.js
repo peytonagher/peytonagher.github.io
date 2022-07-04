@@ -79,7 +79,7 @@ function moveSnake() {
     const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
     if (gotNomNoms) {
         foodTime();
-        //score += 1; // will go here or in foodTime
+        score += 1;
     }
     else {
         snake.pop();
@@ -108,7 +108,6 @@ function foodTime() {
         const isFull = part.x == food_x && part.y == food_y;
         if (isFull) {
             foodTime();
-            score += 1; // will go here or in moveSnake
         }});
 }
 
