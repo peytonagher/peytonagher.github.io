@@ -79,7 +79,7 @@ function moveSnake() {
     const gotNomNoms = snake[0].x === food_x && snake[0].y === food_y;
     if (gotNomNoms) {
         foodTime();
-        score += 1; // will go here or in foodTime
+        //score += 1; // will go here or in foodTime
     }
     else {
         snake.pop();
