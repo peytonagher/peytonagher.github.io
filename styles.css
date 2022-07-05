@@ -202,7 +202,7 @@ a.navbar:hover {
     h2.resumeHeader {
         text-align: left;
         justify-content: left;
-        margin-left: 10%;
+        margin-left: 9%;
         margin-bottom: 20px;
         margin-top: 25px;
     }
@@ -211,14 +211,14 @@ a.navbar:hover {
         font-size: 16px;
         justify-content: left;
         text-align: left;
-        margin-left: 13%;
+        margin-left: 12%;
     }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
-        margin-left: 16%;
+        margin-left: 13%;
     }
     div.disclaimer {
         width: 65%;
@@ -289,7 +289,7 @@ a.navbar:hover {
     h2.resumeHeader {
         text-align: left;
         justify-content: left;
-        margin-left: 10%;
+        margin-left: 9%;
         margin-bottom: 20px;
         margin-top: 25px;
     }
@@ -298,14 +298,14 @@ a.navbar:hover {
         font-size: 16px;
         justify-content: left;
         text-align: left;
-        margin-left: 13%;
+        margin-left: 12%;
     }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
-        margin-left: 16%;
+        margin-left: 13%;
     }
     div.disclaimer {
         justify-content: center;
