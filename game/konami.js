@@ -1,12 +1,22 @@
-const input = [];
-const konamiCode = 'wwssadadba';
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 
+                'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 
-window.addEventListener('keyup', (event) => {
+var current = 0;
+
+var keyHandler = function (event) {
     console.log(event.key);
-    input.push(event.key);
-    input.splice(-konamiCode.length - 1, input.length - konamiCode.length);
-    if (input.join('').includes(konamiCode)) {
-        console.log('it works!') // enable game display here
+
+    if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+        current = 0;
+        return;
     }
-    console.log(input);
-})
+
+    current++;
+
+    if (pattern.length === current) {
+        window.alert("something cool coming soon");
+        document.getElementById("snakeGame").src = "game/pong.js";
+    }
+}
+
+document.addEventListener('keydown', keyHandler, false);
