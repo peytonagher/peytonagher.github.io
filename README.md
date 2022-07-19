@@ -1,6 +1,6 @@
 
 to do:
 
-- add more project screenshots
+- add project screenshots
 - implement react
-- snake leaderboard & konami code
+- konami code, javascript pong/pacman

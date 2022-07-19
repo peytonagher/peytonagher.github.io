@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", 
     function () {
         alert("use wasd keys to move" + "\nctrl/cmd + r to restart" 
-        + "\n\nnote: this page is for desktop browser use only");
+                + "\n\nnote: this page is for desktop browser use only");
         pTag = document.querySelector("div");
         newVal = document.createElement("p");
         newVal.innerHTML = '';
@@ -37,7 +37,7 @@ document.addEventListener("keydown", changeDirection)
 
 function main() {       
     if (gameEnd()) {
-        alert("try again, " + "score: " + score);
+        alert("try again, score: " + score);
         document.location.reload(true);
         return;
     }
@@ -153,15 +153,4 @@ function gameEnd() {
     const hitToptWall = snake[0].y < 0;
     const hitBottomWall = snake[0].y > board.height - 10;
     return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
-}
-
-
-async function sendScore(score) {
-    if (!isLoggedIn) return;
-    const path = '/~/leaderboard.js';
-	const method = 'POST';
-	const headers = { 'Content-Type': 'application/json' }
-	const name = playername;
-	const body = JSON.stringify({ name, score });
-	await fetch(path, { method, headers, body });
 }
