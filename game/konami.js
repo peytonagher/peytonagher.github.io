@@ -15,7 +15,7 @@ var keyHandler = function (event) {
 
     if (pattern.length === current) {
         window.alert("something cool coming soon");
-        document.getElementById("snakeGame").src = "game/pong.js";
+        document.getElementById("game").src = "game/asteroids.js";
     }
 }
 
