@@ -14,7 +14,7 @@ var keyHandler = function (event) {
     current++;
 
     if (pattern.length === current) {
-        window.alert("something cool coming soon");
+        window.alert("something cool coming soon");                 // remove when asteroids is done
         document.getElementById("game").src = "game/asteroids.js";
     }
 }
