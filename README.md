@@ -1,6 +1,6 @@
 
 to do:
 
-- add project screenshots
+- add more photos
 - implement react
-- konami code, javascript pong/pacman
+- konami code, javascript game #2
