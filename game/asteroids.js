@@ -1,3 +1,19 @@
+let board;
+let boardCtx;
+let boardWidth = 1200;
+let boardHeight = 800;
+let keys = [];
+let ship;
+let bullets = [];
+let asteroids = [];
+let lives = 2;
+let score = 0;
+
+const boardColor = "#000000";
+const asteroidColor = "#c5c7c9";
+const shipColor = "#04ccde";
+
+
 document.addEventListener("DOMContentLoaded", 
     function () {
         alert("wasd: move" + "\nspace: shoot" + "\nctrl/cmd + r to restart");
@@ -5,29 +21,36 @@ document.addEventListener("DOMContentLoaded",
         newVal = document.createElement("p");
         newVal.innerHTML = '';
         pTag.appendChild(newVal);
+        board = document.getElementById("canvas");
+        boardCtx = board.getContext("2d");
+        board.width = boardWidth;
+        board.height = boardHeight;
+        boardCtx.fillStyle = boardColor;
+        boardCtx.fillRect(0, 0, board.width, board.height);
+        ship = new Ship();
+
+        for (let i = 0; i < 8; i++) {
+            asteroids.push(new Asteroid());
+        }
+
+        document.body.addEventListener("keydown", handleKeyDown);
+        document.body.addEventListener("keyup", handleKeyUp);
+
+        Render();
     }
 );
 
-const boardColor = "#000000";
-const asteroidColor = "#c5c7c9";
-const shipColor = "#04ccde";
-
-let board;
-let boardCtx;
-let keys = [];
-let score = 0;
-
-main();
-
-function main() {       
-    if (gameEnd()) {
-        alert("try again! score: " + score);
-        document.location.reload(true);
-        return;
-    }
-
-
+function handleKeyDown(e) {
+    keys[e.keyCode] = true;
 }
+
+function handleKeyUp(e) {
+    keys[e.keyCode] = false;
+    if (e.keyCode === 32) {
+        bullets.push(new Bullet(ship.angle));
+    }
+}
+
 
 function GameCanvas() {
 
@@ -43,6 +66,7 @@ function GameCanvas() {
     
 }
 
+
 class Ship {
     constructor() {
         this.visible = true;
@@ -57,6 +81,12 @@ class Ship {
         this.radius = 14;
         this.angle = 0;
         this.strokeColor = shipColor;
+        this.noseX = boardWidth / 2 + 15;
+        this.noseY = boardHeight / 2;
+    }
+
+    Rotate(dir) {
+        this.angle += this.rotation * dir;
     }
 
     Update() {
@@ -86,9 +116,63 @@ class Ship {
         this.x -= this.vx;
         this.y -= this.vy;
     }
+
+    Draw() {
+        boardCtx.strokeStyle = this.strokeColor;
+        boardCtx.beginPath();
+
+        let vAngle = ((Math.PI * 2) / 3);
+        let radian = this.angle / Math.PI * 180;
+
+        this.noseX = this.x - this.rotation * Math.cos(radian);
+        this.noseY = this.y - this.rotation * Math.sin(radian);
+
+        for (let i = 0; i < 3; i++) {
+            boardCtx.lineTo(this.x - this.radius * Math.cos(vAngle * i + radians), this.y - this.radius * Math.sin(vAngle * i + radian));
+        }
+
+        boardCtx.closePath();
+        boardCtx.stroke();
+        
+    }
 }
 
-let ship = new Ship();
+class Bullet {
+    constructor(angle) {
+        this.visible = true;
+        this.x = ship.noseX;
+        this.y = ship.noseY;
+        this.angle = angle;
+        this.height = 4;
+        this.width = 4;
+        this.speed = 5;
+        this.vx = 0;
+        this.vy = 0;
+    }
+
+    Update() {
+        let radian = this.angle / Math.PI * 180;
+        this.x -= Math.cos(radian) * this.speed;
+        this.y -= Math.sin(radian) * this.speed;
+    }
+
+    Draw() {
+        boardCtx.fillStyl = shipColor;
+        boardCtx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+class Asteroid {
+    
+}
+
+function CircleCollision() {
+
+}
+
+function DrawLifeShips() {
+
+}
 
 function Render() {
 
