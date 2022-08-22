@@ -2,4 +2,4 @@
 to do:
 
 - implement react
-- konami code, javascript game #2
+- konami code, js game #2
