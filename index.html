@@ -56,8 +56,10 @@
             <div class="datetime"><span id="datetime"></span></div>
             <script>
                 var date =  new Date();
+                var fullYear = date.getFullYear();
+                var littleYear = fullYear.toString().substr(-2);
                 document.getElementById("datetime").innerHTML = (("0" + (date.getMonth() + 1)).slice(-2)) + "." + 
-                (("0" + date.getDate()).slice(-2)) + "." + (date.getFullYear());
+                (("0" + date.getDate()).slice(-2)) + "." + (littleYear);
             </script>
             <h4>est. 2021</h4>
             <br><br>
