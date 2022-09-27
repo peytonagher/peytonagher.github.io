@@ -20,12 +20,28 @@ p.resumeContent {
     text-align: left;
     margin-left: 34%;
 }
+p.resumeContent2 {
+    display: flex;
+    font-size: 16px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 31%;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
 p.resumeDetail {
     display: flex;
     font-size: 15px;
     justify-content: left;
     text-align: left;
     margin-left: 36%;
+}
+p.resumeDetail2 {
+    display: flex;
+    font-size: 15px;
+    justify-content: left;
+    text-align: left;
+    margin-left: 34%;
 }
 
 div.about-me {
@@ -179,6 +195,7 @@ a.navbar:hover {
 }
 
 
+
 @media only screen and (max-width: 395px) { 
     /* iphoneSM: 375px */ 
     /* iphoneMD: 390px */
@@ -213,12 +230,28 @@ a.navbar:hover {
         text-align: left;
         margin-left: 12%;
     }
+    p.resumeContent2 {
+        display: flex;
+        font-size: 16px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 9%;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
         margin-left: 13%;
+    }
+    p.resumeDetail2 {
+        display: flex;
+        font-size: 15px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 11%;
     }
     div.disclaimer {
         width: 65%;
@@ -266,6 +299,7 @@ a.navbar:hover {
 }
 
 
+
 @media only screen and (min-width: 396px) and (max-width: 430px) {
     /* iphoneLG: 414px */
     /* iphoneXL: 428px */
@@ -300,12 +334,28 @@ a.navbar:hover {
         text-align: left;
         margin-left: 12%;
     }
+    p.resumeContent2 {
+        display: flex;
+        font-size: 16px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 9%;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
     p.resumeDetail {
         display: flex;
         font-size: 15px;
         justify-content: left;
         text-align: left;
         margin-left: 13%;
+    }
+    p.resumeDetail2 {
+        display: flex;
+        font-size: 15px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 11%;
     }
     div.disclaimer {
         justify-content: center;
