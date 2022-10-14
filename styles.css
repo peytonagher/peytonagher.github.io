@@ -19,6 +19,7 @@ p.resumeContent {
     justify-content: left;
     text-align: left;
     margin-left: 34%;
+    margin-right: 20%;
 }
 p.resumeContent2 {
     display: flex;
@@ -35,6 +36,8 @@ p.resumeDetail {
     justify-content: left;
     text-align: left;
     margin-left: 36%;
+    margin-right: 25%;
+    line-height: 140%;
 }
 p.resumeDetail2 {
     display: flex;
