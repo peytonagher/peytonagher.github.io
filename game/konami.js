@@ -1,5 +1,5 @@
 var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 
-                'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+                'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 's'];
 
 var current = 0;
 
@@ -14,7 +14,6 @@ var keyHandler = function (event) {
     current++;
 
     if (pattern.length === current) {
-        window.alert("something cool coming soon");                 // remove when asteroids is done
         document.getElementById("game").src = "game/asteroids.js";
     }
 }
