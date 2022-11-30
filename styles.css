@@ -19,11 +19,7 @@ p.resumeContent {
     justify-content: left;
     text-align: left;
     margin-left: 34%;
-<<<<<<< HEAD
-    margin-right: 23%;
-=======
     margin-right: 20%;
->>>>>>> 5419d05045e04688617abfedc343d2286e4dba1d
 }
 p.resumeContent2 {
     display: flex;
