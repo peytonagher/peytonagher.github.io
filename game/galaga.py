@@ -1,3 +1,5 @@
+# loads blank pygame screen
+
 import pygame
 import random
 
