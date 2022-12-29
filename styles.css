@@ -58,7 +58,7 @@ div.about-me {
 }
 div.project-page {
     display: flex;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 35%;
     margin-right: 35%;
     text-align: left;
@@ -92,6 +92,7 @@ div.disclaimer {
 div.datetime {
     margin: auto;
     display: flex;
+    font-size: 16px;
     text-align: center;
     justify-content: center;
 }
@@ -118,6 +119,7 @@ h2.resumeHeader {
     margin-top: 25px;
 }
 h2.projects {
+    font-size: 22px;
     text-align: left;
     justify-content: left;
     margin-left: 33%;
@@ -128,6 +130,7 @@ h4 {
     font-family: Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -194,7 +197,9 @@ ul li a {
 
 a.navbar:hover {
     background-size: 50%, 50%;
-    background-color: rgb(47, 109, 255);
+    background-color: rgb(95, 47, 255);
+    width: 200%;
+    height: 45%;
 }
 
 
